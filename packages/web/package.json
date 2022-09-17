@@ -2,6 +2,7 @@
   "name": "zedeogo.github.io",
   "version": "0.1.0",
   "private": true,
+  "author": "José Diniz <contato.zedeogo@gmail.com>",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.3.0",
@@ -44,6 +45,5 @@
   "description": "My portfolio",
   "main": "index.js",
   "repository": "https://github.com/zedeogo/zedeogo.github.io.git",
-  "author": "contato.zedeogo@gmail.com",
   "license": "MIT"
 }
