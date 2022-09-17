@@ -9,16 +9,22 @@ on:
 
 jobs:
   deploy:
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-latest
+    
     steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-node@v1
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Setup
+        uses: actions/setup-node@v1
         with:
           node-version: '16.14.2'
+        
       - name: Build web-app
         run: |
-          yarn install --immutable --immutable-cache --check-cache
-          yarn run build packages/web/
+          yarn ci
+          yarn st
+        
       - name: Deploy to gh-pages
         uses: peaceiris/actions-gh-pages@v3
         with:
