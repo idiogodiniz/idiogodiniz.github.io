@@ -7,6 +7,9 @@
       "packages/*"
     ]
   },
+  "scripts": {
+    "ci": "yarn install --immutable --immutable-cache --check-cache"
+  },
   "author": "José Diniz <contato.zedeogo@gmail.com>",
   "main": "index.js",
   "license": "MIT"

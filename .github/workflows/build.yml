@@ -3,8 +3,11 @@ name: deploy
 on:
   push:
     branches:
-      - master
+      - 'master/.devcontainer/**'
+      - 'master/.github/**'
       - 'master/packages/web/**'
+      - 'master/package.json'
+      - 'master/yarn.lock'
 
 jobs:
   deploy:
@@ -21,8 +24,8 @@ jobs:
         
       - name: Build web-app
         run: |
-          yarn ci ./packages/web
-          yarn run build ./packages/web
+          yarn ci
+          cd ./packages/web && yarn run build
         
       - name: Deploy to gh-pages
         uses: peaceiris/actions-gh-pages@v3
