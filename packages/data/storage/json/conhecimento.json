@@ -12,6 +12,10 @@
                 "img": ""
             },
             {
+                "name": "Python",
+                "img": ""
+            },
+            {
                 "name": "Typescript",
                 "img": ""
             },
@@ -21,10 +25,6 @@
             },
             {
                 "name": "HTML5/CSS3",
-                "img": ""
-            },
-            {
-                "name": "C++",
                 "img": ""
             },
             {
@@ -62,7 +62,7 @@
         ]
     },
     {
-        "name": "Hardware",
+        "name": "Hardware e Redes",
         "color": "",
         "content": [
             {
@@ -72,15 +72,9 @@
             {
                 "name": "Arduino",
                 "img": ""
-            }
-        ]
-    },
-    {
-        "name": "Segurança da informação",
-        "color": "",
-        "content": [
+            },
             {
-                "name": "Linux",
+                "name": "Infraestrutura de Redes",
                 "img": ""
             }
         ]
@@ -91,6 +85,18 @@
         "content": [
             {
                 "name": "Amazon Web Services",
+                "img": ""
+            },
+            {
+                "name": "Azure",
+                "img": ""
+            },
+            {
+                "name": "GoogleCloud",
+                "img": ""
+            },
+            {
+                "name": "Oracle",
                 "img": ""
             }
         ]
@@ -103,7 +109,7 @@
         ]
     },
     {
-        "name": "Outras Ferramentas",
+        "name": "Ferramentas",
         "color": "",
         "content": [
             {
@@ -111,15 +117,13 @@
                 "img": ""
             },
             {
+                "name": "Yarn",
+                "img": ""
+            },
+            {
                 "name": "Git",
                 "img": ""
             }
-        ]
-    },
-    {
-        "name": "Redes",
-        "color": "#FF0000",
-        "content": [
         ]
     }
 ]

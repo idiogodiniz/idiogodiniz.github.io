@@ -20,7 +20,6 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "predeploy": "yarn run build",
     "build": "react-scripts build",
     "test": "react-scripts test"
   },
