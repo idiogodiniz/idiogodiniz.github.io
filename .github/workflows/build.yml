@@ -24,8 +24,8 @@ jobs:
         
       - name: Build web-app
         run: |
-          yarn ci
-          yarn deploy
+          yarn ci ./packages/web
+          yarn run build ./packages/web
         
       - name: Deploy to gh-pages
         uses: peaceiris/actions-gh-pages@v3

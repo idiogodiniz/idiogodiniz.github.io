@@ -7,10 +7,6 @@
       "packages/*"
     ]
   },
-  "scripts": {
-    "ci": "yarn install --immutable --immutable-cache --check-cache",
-    "st": "cd ./packages/web && yarn predeploy && yarn deploy"
-  },
   "author": "José Diniz <contato.zedeogo@gmail.com>",
   "main": "index.js",
   "license": "MIT"
