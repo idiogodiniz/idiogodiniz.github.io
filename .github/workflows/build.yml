@@ -3,7 +3,8 @@ name: deploy
 on:
   push:
     branches:
-      - master
+      - 'master/web/**'
+      - 'master/.github/**'
 
 jobs:
   deploy:
