@@ -1,0 +1,17 @@
+{
+  "name": "zedeogo.github.io",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": {
+    "packages": [
+      "packages/*"
+    ]
+  },
+  "scripts": {
+    "ci": "cd ./packages/web && npm ci",
+    "start": "cd ./packages/web && yarn run build"
+  },
+  "author": "José Diniz <contato.zedeogo@gmail.com>",
+  "main": "index.js",
+  "license": "MIT"
+}

@@ -1,0 +1,11 @@
+pendentes
+
+software
+    ~ / desenvolvimento
+        ~ / javascript
+            ~ / 03.~ (aprofundamento em geral)
+            ~ / 03.4 bigint
+            ~ / 03.5 symbol
+            ~ / 03.6 null e undefined
+            ~ / 03.7 operadores detalhados
+

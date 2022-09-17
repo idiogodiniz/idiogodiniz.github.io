@@ -1,0 +1,96 @@
+{ 
+    "emmet.includeLanguages": {
+        "markdown": "html"
+    },
+    "emmet.triggerExpansionOnTab": true,
+    "auto-rename-tag.activationOnLanguage": ["html", "xml", "php", "javascript", "javascriptreact", "markdown"],
+    "editor.smoothScrolling": true,
+    "editor.cursorStyle": "underline",
+    "editor.tokenColorCustomizations": {
+        "[Default Dark+]": {
+            "functions": "#ceb735",
+            "keywords": "#9a7adf",
+            "types": "#24d4b1",
+            "strings": "#e78651",
+            "variables": "#5daed5",
+            "numbers": "#96e5a8",
+            "textMateRules": [
+                {
+                    "scope":"",
+                    "settings": {
+                        "foreground": "#ff0000",
+                        "fontStyle": ""
+                    }       
+                },
+                {
+                    "scope":"keyword.operator",
+                    "settings": {
+                        "foreground": "#d2c057",
+                        "fontStyle": ""
+                    }       
+                },
+                {
+                    "scope":"keyword.operator.new",
+                    "settings": {
+                        "foreground": "#9a7fd5",
+                        "fontStyle": ""
+                    }       
+                },
+                {
+                    "scope":"storage.modifier",
+                    "settings": {
+                        "foreground": "#9a7adf",
+                        "fontStyle": ""
+                    }       
+                },
+                {
+                    "scope":"support.class",
+                    "settings": {
+                        "foreground": "#dbdbdb",
+                        "fontStyle": ""
+                    }       
+                },
+                {
+                    "scope":"variable.parameter",
+                    "settings": {
+                        "foreground": "#5daed5",
+                        "fontStyle": ""
+                    }       
+                },
+                {
+                    "scope":"keyword.other.using",
+                    "settings": {
+                        "foreground": "#c97ec2",
+                        "fontStyle": ""
+                    }
+                },
+                {
+                    "scope":"storage.type.new",
+                    "settings": {
+                        "foreground": "#d55dad",
+                        "fontStyle": ""
+                    }       
+                },
+                {
+                    "scope":"support.class",
+                    "settings": {
+                        "foreground": "#37daa4",
+                        "fontStyle": ""
+                    }       
+                },
+                {
+                    "scope":"variable.other.readwrite.alias.js",
+                    "settings": {
+                        "foreground": "#37daa4",
+                        "fontStyle": ""
+                    }       
+                }
+            ]
+        }
+    },
+    "workbench.colorCustomizations": {
+        "[Default Dark+]": {
+            "editor.background": "#242424"
+        }
+    }
+}

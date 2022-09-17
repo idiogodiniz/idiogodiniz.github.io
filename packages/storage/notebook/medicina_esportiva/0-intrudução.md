@@ -1,0 +1,9 @@
+# Introdução
+
+O alimento fornece energia a matéria para as incontáveis substâncias essenciais para o crescimento e a sobrevivência de todo ser humano. Vamos começar com uma breve descrição da **digestão**, **absorção**, **transporte** e **excreção de nutriente**.
+
+Os processos notáveis mencionados, convertem uma infinidade **gêneros alimentícios** complexos em nutrientes individuais prontos para serem utilizados no **metabolismo**. Os **macrocrutrientes** (proteínas, gorduras e carboidratos) contribuem para o conjunto de **energia total**, mas na realidade a energia que produzem é particularmente voltada para o trabalho dos músculos e órgãos do corpo.
+
+A liberação de energia para a **síntese**, o **movimento** e outras funções requer que os **micronutrientes** (vitaminas e minerais) funcionem como **coenzimas**, **cocatalisadores** e **tampões** na área aquosa do metabolismo. O modo como os nutrientes tornam-se partes integrantes do corpo e contribuem para o **funcionamento corporal** adequado depende fortemente dos **processos fisiológicos** e **bioquímicos** que governam as suas ações.
+
+Para um profissional da área da saúde, a avaliação nutricional é o primeiro passo no processo de cuidado nutricional. Para implantar um plano de nutrição bem-sucedido, a avaliação deve incluir os principais elementos do **histórico médico** do paciente, o problema atual, **medidas antropométricas**, **valores laboratoriais** e **bioquímicos**, informações sobre **medicamentos** e uso de **sumplementos** de ervas para possíveis interações entre **drogas** e **alimentos**, além de um histórico completo de alimentação e ingestão de nutrientes. Agora, podemos obter mais informações necessárias para cumprir o restante do processo de cuidado nutricional.
