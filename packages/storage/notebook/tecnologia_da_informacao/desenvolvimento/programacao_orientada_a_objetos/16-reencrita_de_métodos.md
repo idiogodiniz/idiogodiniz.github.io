@@ -1,1 +1,0 @@
-# Reencrita de Métodos

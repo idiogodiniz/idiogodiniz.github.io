@@ -1,1 +1,0 @@
-# Retenção Mínima de Dados

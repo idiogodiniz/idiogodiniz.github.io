@@ -1,1 +1,0 @@
-# Geometria Espacial (parte 1)

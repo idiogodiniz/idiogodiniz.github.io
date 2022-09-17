@@ -1,1 +1,0 @@
-# Potencialização e Radiação

@@ -1,1 +1,0 @@
-# Una o paradigma orientado a objetos ao funcional para resolver problemas

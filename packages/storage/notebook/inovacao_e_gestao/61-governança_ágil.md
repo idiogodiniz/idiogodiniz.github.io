@@ -1,3 +1,0 @@
-# Governança Ágil
-
-## OKR

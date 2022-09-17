@@ -1,1 +1,0 @@
-# Fatoração e Produtos Notáveis

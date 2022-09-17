@@ -10,10 +10,7 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     
-    steps:
-      - name: Acessing Web Directory
-        uses: 'cd ./packages/web/'
-        
+    steps:        
       - name: Checkout
         uses: actions/checkout@v2
 

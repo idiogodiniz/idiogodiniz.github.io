@@ -1,5 +1,0 @@
-# Sujeito
-
-## Conceito
-
-## Tipos

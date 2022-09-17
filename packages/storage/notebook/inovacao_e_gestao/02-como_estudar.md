@@ -1,3 +1,0 @@
-# Como Estudar
-
-## Mapa Mental

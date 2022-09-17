@@ -1,3 +1,0 @@
-# Definindo Classes
-
-## Tipos?

@@ -1,1 +1,0 @@
-# SDKs e Patternsde Segurança

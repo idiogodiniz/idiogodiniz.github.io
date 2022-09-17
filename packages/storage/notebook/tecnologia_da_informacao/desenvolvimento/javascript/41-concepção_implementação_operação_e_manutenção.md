@@ -1,1 +1,0 @@
-# Concepção, Implementação, Operação e Manuntenção

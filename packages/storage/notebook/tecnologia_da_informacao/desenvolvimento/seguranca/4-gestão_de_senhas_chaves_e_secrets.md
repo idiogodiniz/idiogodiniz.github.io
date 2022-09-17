@@ -1,1 +1,0 @@
-#  Gestão de Senhas, Chaves e Secrets

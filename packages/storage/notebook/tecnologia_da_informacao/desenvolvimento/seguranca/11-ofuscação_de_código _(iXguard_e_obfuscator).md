@@ -1,1 +1,0 @@
-# Ofuscação de Código (iXGuard, Obfuscator)

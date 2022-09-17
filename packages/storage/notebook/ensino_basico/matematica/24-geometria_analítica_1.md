@@ -1,1 +1,0 @@
-# Geometria Analítica (parte 1)

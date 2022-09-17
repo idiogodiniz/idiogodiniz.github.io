@@ -1,1 +1,0 @@
-# Excreção de Nutrientes

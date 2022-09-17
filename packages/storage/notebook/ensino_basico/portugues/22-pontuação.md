@@ -1,5 +1,0 @@
-# Pontuação
-
-## Fundamentos
-
-## Pontuação expressiva
