@@ -22,7 +22,8 @@
     "predeploy": "yarn run build",
     "deploy": "gh-pages -d build",
     "build": "react-scripts build",
-    "test": "react-scripts test"
+    "test": "react-scripts test",
+    "ci": "yarn install --immutable --immutable-cache --check-cache"
   },
   "eslintConfig": {
     "extends": [
