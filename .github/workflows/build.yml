@@ -15,7 +15,7 @@ jobs:
           node-version: '16.14.2'
       - name: Build web-app
         run: |
-          cd ./projects/web/
+          cd ./master/projects/web/
           yarn install --immutable --immutable-cache --check-cache
           yarn run build
       - name: Deploy to gh-pages
