@@ -2,58 +2,47 @@ import { createGlobalStyle } from 'styled-components';
 
 const Common = createGlobalStyle`
     @font-face {
-        font-family: 'source-semibold';
-        src: url('/assets/fonts/source-code-pro/static/SourceCodePro-SemiBold.ttf')
+        font-family: 'inter-bold';
+        src: url('/assets/fonts/Inter-Bold.ttf');
     }
     @font-face {
-        font-family: 'itim';
-        src: url('/assets/fonts/itim/Itim-Regular.ttf');
+        font-family: 'inter-semibold';
+        src: url('/assets/fonts/Inter-SemiBold.ttf');
     }
     @font-face {
-        font-family: 'inria-bold';
-        src: url('/assets/fonts/inria-sans/InriaSans-Bold.ttf');
+        font-family: 'inter-medium';
+        src: url('/assets/fonts/Inter-Medium.ttf');
     }
     @font-face {
-        font-family: 'inria-bold-italic';
-        src: url('/assets/fonts/inria-sans/InriaSans-BoldItalic.ttf');
+        font-family: 'inter-regular';
+        src: url('/assets/fonts/Inter-Regular.ttf');
     }
     @font-face {
-        font-family: 'inria-italic';
-        src: url('/assets/fonts/inria-sans/InriaSans-Italic.ttf');
+        font-family: 'inter-light';
+        src: url('/assets/fonts/Inter-Light.ttf');
     }
     @font-face {
-        font-family: 'inria-light';
-        src: url('/assets/fonts/inria-sans/InriaSans-Light.ttf');
-    }
-    @font-face {
-        font-family: 'inria-light-italic';
-        src: url('/assets/fonts/inria-sans/InriaSans-LightItalic.ttf');
-    }
-    @font-face {
-        font-family: 'inria-regular';
-        src: url('/assets/fonts/inria-sans/InriaSans-Regular.ttf');
+        font-family: 'inter-thin';
+        src: url('/assets/fonts/Inter-Thin.ttf');
     }
     .limit-view {
         max-width: 1920px !important;
     }
+    h1, h2, h3, h4, h5, h6 {
+        font-family: 'inter-bold';
+        letter-spacing: .0001rem;
+    }
     h1, h1 > span {
-        font-family: 'inria-bold';
-        font-size: 4rem;
-        line-height: 4.4rem;
-        margin-bottom: 1.8rem;
-        letter-spacing: .04rem;
+        font-size: 2.7rem;
+        line-height: 3.2rem;
     }
     h2, h2 > span, h2 > a{
         font-size: 2rem;
         line-height: 2.2rem;
-        margin-bottom: .8rem;
-        letter-spacing: .04rem;
     }
     h3, h3 > span, h3 > a{
         font-size: 1.6rem;
         line-height: 1.8rem;
-        margin-bottom: .8rem;
-        letter-spacing: .04rem;
     }
     h4, h4 > span, h4 > a{
         
@@ -68,11 +57,10 @@ const Common = createGlobalStyle`
         font-size: 1.2rem;
         line-height: 1.4rem;
         letter-spacing: .04rem;
-        margin-bottom: .8rem;
     }
     * {
-        font-family: 'inria-regular';
-        color: #FFFFFF;
+        font-family: 'inter-regular';
+        color: #000000;
         padding: 0;
         margin: 0;
         box-sizing: border-box;
@@ -122,15 +110,6 @@ const Common = createGlobalStyle`
         display: flex;
         flex-direction: column;
     }
-    .container-limit {
-        padding: 0 2rem;
-    }
-    .p2-left{
-        padding-left: 2rem;
-    }
-    .p2-right {
-        padding-right: 2rem;
-    }
     .fit-content {
         width: fit-content;
         height: fit-content;
@@ -153,6 +132,9 @@ const Common = createGlobalStyle`
     .absolute {
         position: absolute;
     }
+    .top {
+        top: 0;
+    }
     .z1 {
         z-index: 1;
     }
@@ -168,23 +150,17 @@ const Common = createGlobalStyle`
     .z5 {
         z-index: 5;
     }
-    .c00A3FF{
-        color: #00A3FF;
-    }
     .cFFFFFF {
         color: #FFFFFF;
-    }
-    .cCECECE {
-        color: #CECECE;
-    }
-    .c00A3FF {
-        color: #00A3FF;
     }
     .bFFFFFF {
         background-color: #FFFFFF;
     }
-    .b0F0F0F {
-        background-color: #0F0F0F;
+    .c000000 {
+        color: #000000;
+    }
+    .b000000 {
+        background-color: #000000;
     }
 `;
 

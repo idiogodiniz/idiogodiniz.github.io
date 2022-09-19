@@ -1,25 +1,30 @@
 import styled from 'styled-components';
 
-export const Header = styled.header`
-    top: 0;
-    width: 100%;
-    .header-bar {
-        width: 100%;
-        font-family: 'inria-regular';
-        padding: 0 1.4rem 0;
+const StyledView = styled.div`
+    height: 4rem;
+    padding: 0 2rem;
+    div:nth-child(1) {
+        div {
+            margin-left: .8rem;
+        }
     }
-    nav ul {
-        height: 3.2rem;
+    .view__logo-image {
+        width: 2.2rem;
+        height: auto;
     }
-
-    nav li {
-        margin-left: 1.4rem;
+    .view__settings-image {
+        width: 1.8rem;
+        height: auto;
+    }
+    nav > ul > li {
+        margin-right: 1.5rem;
+    }
+    nav {
+        margin-right: 2rem;
+    }
+    div:nth-child(2) {
+        z-index: 1;
     }
 `;
 
-export const Logo = styled.div`
-    img {
-        height: 1.2rem;
-        width: auto;
-    }
-`;
+export default StyledView;

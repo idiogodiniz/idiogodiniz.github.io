@@ -1,21 +1,21 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import View from './components/view';
 import Home from './pages/home/index';
-import Services from './pages/services/index';
-import Works from './pages/works/index';
-import Api from './pages/apiUsage/index';
-import Caderno from './pages/caderno/index'
-import About from './pages/aboutMe/index';
+import Api from './pages/api';
+import Tools from './pages/tools';
+import Finder from './pages/finder';
+import Blog from './pages/blog';
+import Notebook from './pages/notebook';
 
 const Index = _ => (
     <BrowserRouter>
         <Routes>
             <Route exact path='/' element={<View><Home /></View>} />
-            <Route path='/services' element={<View><Services></Services></View>} />
-            <Route path='/works' element={<View><Works></Works></View>} />
-            <Route path='/api' element={<View><Api></Api></View>} />
-            <Route path='/caderno' element={<View><Caderno></Caderno></View>} />
-            <Route path='/aboutme' element={<View><About></About></View>} />
+            <Route path='/api' element={<View><Api /></View>} />
+            <Route path='/tools' element={<View><Tools /></View>} />
+            <Route path='/finder' element={<View><Finder /></View>} />
+            <Route path='/blog' element={<View><Blog /></View>} />
+            <Route path='/notebook' element={<View><Notebook /></View>} />
         </Routes>
     </BrowserRouter>
 );

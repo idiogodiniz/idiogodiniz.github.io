@@ -1,46 +1,43 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import {
-    Header,
-    Logo
-} from './styles';
+import StyledView from './styles';
 
 const View = props => (
-    <div className='relative wh100'>
-        <Header className='container jc-center fixed z5'>
-            <div className='header-bar container jc-between al-center limit-view'>
-                <Logo className='container al-center cFFFFFF'>
-                    <img src="/assets/img/icon/logo.png" alt="Logo" />
-                </Logo>
-                <nav className='container'>
-                    <ul className='container al-center'>
-                        <li className='container al-center'>
-                            <Link className='cFFFFFF' to='/'>Página Inicial</Link>
+    <div className='container-column relative wh100'>
+        <StyledView className='container w100 jc-between absolute top z2'>
+            <div className='container h100 al-center'>
+                <img className='view__logo-image' src="/assets/img/pictures/logo-black.png" alt="" />
+                <div className='fit'>welcome</div>
+            </div>
+            <div className='container h100 al-center'>
+                <nav className='fit'>
+                    <ul className='fit container'>
+                        <li>
+                            <Link to='/'>Página Inicial</Link>
                         </li>
                         <li>
-                            <Link className='cFFFFFF' to='/services'>Serviços</Link>
+                            <Link to='/api'>Api</Link>
                         </li>
                         <li>
-                            <Link className='cFFFFFF' to='/works'>Trabalhos</Link>
+                            <Link to='/tools'>Ferramentas</Link>
                         </li>
                         <li>
-                            <Link className='cFFFFFF' to='/api'>API</Link>
+                            <Link to='/finder'>Finder</Link>
                         </li>
                         <li>
-                            <Link className='cFFFFFF' to='/caderno'>Caderno</Link>
+                            <Link to='/blog'>Blog</Link>
                         </li>
                         <li>
-                            <Link className='cFFFFFF' to='/aboutme'>Sobre mim</Link>
+                            <Link to='/notebook'>Caderno</Link>
                         </li>
                     </ul>
                 </nav>
+                <div className='fit'>
+                    <img className='view__settings-image' src="/assets/img/pictures/settings-black.png" alt="" />
+                </div>
             </div>
-        </Header>
-        <div className='container-column wh100'>
-            <div className='container-column'>
-                {props.children}
-            </div>
-        </div>
+        </StyledView>
+        { props.children }
     </div>
 );
 
