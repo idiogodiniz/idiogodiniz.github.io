@@ -37,12 +37,12 @@ const Common = createGlobalStyle`
         line-height: 3.2rem;
     }
     h2, h2 > span, h2 > a{
-        font-size: 2rem;
-        line-height: 2.2rem;
+        font-size: 1.2rem;
+        line-height: 1.5rem;
     }
     h3, h3 > span, h3 > a{
-        font-size: 1.6rem;
-        line-height: 1.8rem;
+        font-size: 1.1rem;
+        line-height: 1.3rem;
     }
     h4, h4 > span, h4 > a{
         
@@ -60,7 +60,7 @@ const Common = createGlobalStyle`
     }
     * {
         font-family: 'inter-regular';
-        color: #000000;
+        color: #000;
         padding: 0;
         margin: 0;
         box-sizing: border-box;
@@ -73,6 +73,12 @@ const Common = createGlobalStyle`
     }
     p > a::before{
         content: ' ';
+    }
+    .capitalize {
+        text-transform: capitalize;
+    }
+    .uppercase {
+        text-transform: uppercase;
     }
     .nomin {
         min-height: inherit;
@@ -120,8 +126,14 @@ const Common = createGlobalStyle`
     .jc-center {
         justify-content: center;
     }
+    .jc-end {
+        justify-content: end;
+    }
     .al-center {
         align-items: center;
+    }
+    .al-end {
+        align-items: end;
     }
     .relative {
         position: relative;
@@ -151,16 +163,55 @@ const Common = createGlobalStyle`
         z-index: 5;
     }
     .cFFFFFF {
-        color: #FFFFFF;
+        color: #FFF;
     }
     .bFFFFFF {
-        background-color: #FFFFFF;
+        background-color: #FFF;
     }
     .c000000 {
-        color: #000000;
+        color: #000;
     }
     .b000000 {
-        background-color: #000000;
+        background-color: #000;
+    }
+    .box-shadow-white-right {
+        border: #fff solid 6px;
+        position: absolute;
+        top: 15px;
+        left: 15px;
+        z-index: 1;
+        width: 100%;
+        height: 100%;
+    }
+    .box-shadow-white-left {
+        border: #fff solid 6px;
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        z-index: 1;
+        width: 100%;
+        height: 100%;
+    }
+    .box-shadow-black-right {
+        border: #000 solid 6px;
+        position: absolute;
+        top: 15px;
+        left: 15px;
+        z-index: 1;
+        width: 100%;
+        height: 100%;
+    }
+    .box-shadow-black-left {
+        border: #000 solid 6px;
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        z-index: 1;
+        width: 100%;
+        height: 100%;
+    }
+    .t-smooth {
+        transition: 2s ease-in-out;
     }
 `;
 

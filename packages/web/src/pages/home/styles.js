@@ -29,6 +29,83 @@ export const Top = styled.div`
             height: auto;
         }
     }
+    @media screen and (max-width: 900px) {
+        padding: 20% 0;
+        height: 85vh;
+        .top__welcome-card {
+            background-color: unset;
+            box-shadow: none;
+            backdrop-filter: unset;
+            width: 85%;
+        }
+        .top__background {
+            display: none;
+        }
+    }
+`;
+
+export const Main = styled.main`
+    .section__about {
+        article {
+            width: 60%;
+            p {
+                margin-bottom: .8rem;
+            }
+            @media screen and (max-width: 900px) {
+                width: 100%;
+            }
+        }
+        .section__about-img {
+            width: 12rem;
+            height: 12rem;
+            margin-right: 4rem;
+            @media screen and (max-width: 900px) {
+                margin-right: 0;
+                margin-bottom: 3rem;
+            }
+        }
+        img {
+            width: 12rem;
+            height: auto;
+        }
+        @media screen and (max-width: 900px) {
+            flex-direction: column-reverse;
+        }
+    }
+    .section__contactme{
+        h2, p, a {
+            position: relative;
+            color: #fff;
+            z-index: 2;
+        }
+        h2 {
+            font-size: .9rem;
+            font-family: 'inter-regular';
+            @media screen and (max-width: 900px) {
+                font-size: .6rem;
+                line-height: 1.2rem;
+            }
+        }
+        p, a {
+            font-family: 'inter-medium';
+            font-size: 1.5rem;
+            line-height: 2.1rem;
+            @media screen and (max-width: 900px) {
+                font-size: .8rem;
+                line-height: 1.3rem;
+            }
+        }
+        .section__contactme-box {
+            background-color: #000;
+            width: 65%;
+            padding: .8rem 1rem;
+            margin-bottom: 3rem;
+            @media screen and (max-width: 900px) {
+                width: 85%;
+                padding: .5rem .8rem;
+            }
+        }
+    }
 `;
 
 export default StyledHome;

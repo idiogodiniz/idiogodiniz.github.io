@@ -5,7 +5,7 @@ const Section = props => {
     return (
         <StyledSection bg={props.bg} className={'container-column ' + props.className}>
             <div className='section__tag'>{props.tag[props.tag.length - 1] !== ':' ? `<${props.tag}>` : `${props.tag}`}</div>
-            <div>
+            <div className='content'>
                 { props.children }
             </div>  
             <div className='section__tag'>{props.tag[props.tag.length - 1] !== ':' ? `<${props.tag}/>` : ``}</div>

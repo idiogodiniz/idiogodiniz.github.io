@@ -1,44 +1,75 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import StyledView from './styles';
+import StyledView, {
+    OnOtherScreens
+} from './styles';
 
-const View = props => (
-    <div className='container-column relative wh100'>
-        <StyledView className='container w100 jc-between absolute top z2'>
-            <div className='container h100 al-center'>
-                <img className='view__logo-image' src="/assets/img/pictures/logo-black.png" alt="" />
-                <div className='fit'>welcome</div>
-            </div>
-            <div className='container h100 al-center'>
-                <nav className='fit'>
-                    <ul className='fit container'>
+const View = props => {
+
+    return (
+        <div className='container-column relative wh100'>
+            
+                <StyledView className='container w100 jc-between fixed top z3'>
+                    <div className='container h100 al-center'>
+                        <img className='view__logo-image' src='/assets/img/pictures/logo-black.png' alt='' />
+                        <div className='fit'>welcome</div>
+                    </div>
+                    <div className='container h100 al-center'>
+                        <nav className='fit'>
+                            <ul className='fit container'>
+                                <li>
+                                    <Link to='/'>Página Inicial</Link>
+                                </li>
+                                <li>
+                                    <Link to='/api'>Api</Link>
+                                </li>
+                                <li>
+                                    <Link to='/tools'>Ferramentas</Link>
+                                </li>
+                                <li>
+                                    <Link to='/finder'>Finder</Link>
+                                </li>
+                                <li>
+                                    <Link to='/blog'>Blog</Link>
+                                </li>
+                                <li>
+                                    <Link to='/notebook'>Caderno</Link>
+                                </li>
+                            </ul>
+                        </nav>
+                        <div className='fit'>
+                            <img className='view__settings-image' src='/assets/img/pictures/settings-black.png' alt='' />
+                        </div>
+                    </div>
+                </StyledView>
+            
+            <OnOtherScreens className='fixed w100 z3'>
+                <nav className='wh100'>
+                    <ul className='container jc-between al-center wh100'>
                         <li>
-                            <Link to='/'>Página Inicial</Link>
+                            <Link to='/'><img src='/assets/img/pictures/home-white.png' alt='' /></Link>
                         </li>
                         <li>
-                            <Link to='/api'>Api</Link>
+                            <Link to='/api'><img src='/assets/img/pictures/api-white.png' alt='' /></Link>
                         </li>
                         <li>
-                            <Link to='/tools'>Ferramentas</Link>
+                            <Link to='/tools'><img src='/assets/img/pictures/tools-white.png' alt='' /></Link>
                         </li>
                         <li>
-                            <Link to='/finder'>Finder</Link>
+                            <Link to='/finder'><img src='/assets/img/pictures/search-white.png' alt='' /></Link>
                         </li>
                         <li>
-                            <Link to='/blog'>Blog</Link>
+                            <Link to='/blog'><img src='/assets/img/pictures/blog-white.png' alt='' /></Link>
                         </li>
                         <li>
-                            <Link to='/notebook'>Caderno</Link>
+                            <Link to='/notebook'><img src='/assets/img/pictures/notebook-white.png' alt='' /></Link>
                         </li>
                     </ul>
                 </nav>
-                <div className='fit'>
-                    <img className='view__settings-image' src="/assets/img/pictures/settings-black.png" alt="" />
-                </div>
-            </div>
-        </StyledView>
-        { props.children }
-    </div>
-);
+            </OnOtherScreens>
+            {props.children}
+        </div>
+    )
+};
 
 export default View;
