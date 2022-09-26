@@ -11,7 +11,7 @@ const View = props => {
     useEffect(_ => {
         const controlHeader = _ => {
             let currentY = window.scrollY;
-            delay(5).then(_ => {
+            delay(50).then(_ => {
                 if (window.scrollY < currentY)
                     setShow(true);
                 else if (window.scrollY > currentY)

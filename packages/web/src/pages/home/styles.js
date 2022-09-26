@@ -34,7 +34,7 @@ export const Top = styled.div`
             height: auto;
         }
     }
-    @media screen and (max-width: 900px) {
+    @media screen and (max-width: 110px) {
         padding: 15% 0;
         min-height: 35.7rem;
         height: 75vh;
@@ -139,7 +139,7 @@ export const Main = styled.main`
         }
         .section__knowledge-card {
             background-color: #fff;
-            margin: 1.5625% 1rem;
+            margin: 1.25%;
             width: 17.5%;
             height: 4.3rem;
             padding: 1rem 1rem;
@@ -155,8 +155,8 @@ export const Main = styled.main`
         @media screen and (max-width: 900px) {
             justify-content: space-between;
             .section__knowledge-carrousel {
-                width: 250%;
-                left: -42%;
+                width: 200%;
+                left: -25.5%;
             }
             h2 {
                 width: 25%;
