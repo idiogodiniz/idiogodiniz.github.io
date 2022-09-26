@@ -1,11 +1,64 @@
-import React from 'react';
+import React, { useState, useEffect, useLayoutEffect } from 'react';
 import Section from '../../components/section';
 import StyledHome, {
     Top,
-    Main
+    Main,
+    Footer
 } from './styles';
+import { getKnowledge } from '../../api/public/get';
 
-const Index = _ => {
+const Home = _ => {
+    const [knowledge, setKnowledge] = useState([{ name: '', content: [{name: '', img: '', desc: ''}] }]);
+    const [positions, setPositions] = useState([0, 0, 0, 0, 0]);
+    const [position, setPosition] = useState(0);
+    const [changedPosition, setChangedPosition] = useState(false);
+
+    const check = number => {
+        if (number === knowledge.length)
+            return 0;
+        else if (number > knowledge.length)
+            return number - knowledge.length;
+        else
+            return number;
+    };
+
+    const click = e => {
+        if (e.target.id === 'kp1') {
+            setPosition(knowledge.length - 3);
+            setChangedPosition(!changedPosition);
+        } else if (e.target.id === 'kp2') {
+            setPosition(knowledge.length - 2);
+            setChangedPosition(!changedPosition);
+        } else if (e.target.id === 'kp4') {
+            setPosition(0);
+            setChangedPosition(!changedPosition);
+        } else if (e.target.id === 'kp5') {
+            setPosition(1);
+            setChangedPosition(!changedPosition);
+        };
+    };
+
+    useEffect(_ => {
+        const fetchKnowledge = async _ => {
+            const response = await getKnowledge();
+            setKnowledge(response.content);
+        };
+        fetchKnowledge();
+    }, []);
+
+    useLayoutEffect(_ => {
+        if (knowledge[0].name !== '')
+            setPositions([knowledge.length - 2, knowledge.length - 1, 0, 1, 2]);
+    }, [knowledge]);
+    
+    useLayoutEffect(_ => {
+        const definePositions = _ => {
+            setPositions([check(positions[1] + position), check(positions[2] + position), check(positions[3] + position), check(positions[4] + position), check(positions[4] + position + 1)]);
+        }
+        definePositions();
+        // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, [changedPosition]);
+
     return (
         <StyledHome className='container-column wh100 al-center'>
             <Top className='container jc-between w100 limit-view'>
@@ -13,13 +66,15 @@ const Index = _ => {
                     <h1>Seja bem vindo(a) ao portfólio de José Diniz</h1>
                     <p>Espero que encontre o que precisa</p>
                     <div className='container fit'>
-                        <a className='fit' href='/'><img src='/assets/img/pictures/github-black.png' alt='' /></a>
-                        <a className='fit' href='/'><img src='/assets/img/pictures/linkedin-black.png' alt='' /></a>
-                        <a className='fit' href='/'><img src='/assets/img/pictures/instagram-black.png' alt='' /></a>
+                        <a className='fit' href='https://github.com/zedeogo'><img src='/assets/img/pictures/github-black.png' alt='' /></a>
+                        <a className='fit' href='https://www.linkedin.com/in/zedeogo/'><img src='/assets/img/pictures/linkedin-black.png' alt='' /></a>
+                        <a className='fit' href='https://www.instagram.com/zedeogo'><img src='/assets/img/pictures/instagram-black.png' alt='' /></a>
                     </div>
                 </Section>
-                <div className='top__background container jc-center'>
-                    <img src='/assets/img/pictures/background-top.png' alt='' />
+                <div className='top__background container jc-center al-center h100'>
+                    <div className='fit'>
+                        <img src='/assets/img/pictures/background-top.png' alt='' />
+                    </div>
                 </div>
             </Top>
             <Main className='container-column w100 limit-view'>
@@ -83,9 +138,36 @@ const Index = _ => {
                         </div>
                     </div>
                 </Section>
+                <Section className='section__knowledge o-hidden' bg='000' tag='knowledge'>
+                    <div className='fit w100 section__knowledge-min'>
+                        <div className='section__knowledge-carrousel container relative'>
+                            <h2 id='kp1' className='first' onClick={click}>{knowledge[positions[0]].name}</h2>
+                            <h2 id='kp2' className='norm' onClick={click}>{knowledge[positions[1]].name}</h2>
+                            <h2 className='norm'>{knowledge[positions[2]].name}</h2>
+                            <h2 id='kp4' className='norm' onClick={click}>{knowledge[positions[3]].name}</h2>
+                            <h2 id='kp5' className='last' onClick={click}>{knowledge[positions[4]].name}</h2>
+                        </div>
+                        <div className='container w100 wrap'>
+                            {knowledge[positions[2]].content.map(item => 
+                                <div className='section__knowledge-card' key={item.name}>
+                                    <div className='container'>
+                                        <img src={item.img} alt='' />
+                                        <h3>{item.name}</h3>
+                                    </div>
+                                    <p>{item.desc}</p>
+                                </div>
+                            )}
+                        </div>
+                    </div>
+                </Section>
+                <Section bg='fff' tag='portfolio'></Section>
+                <section className='b000000'></section>
+                <Section bg='fff' tag='social'></Section>
             </Main>
+            <Footer></Footer>
+            <div className='onscreen w100' />
         </StyledHome>
     );
 };
 
-export default Index;
+export default Home;

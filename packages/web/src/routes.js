@@ -1,6 +1,6 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import View from './components/view';
-import Home from './pages/home/index';
+import Home from './pages/home';
 import Api from './pages/api';
 import Tools from './pages/tools';
 import Finder from './pages/finder';

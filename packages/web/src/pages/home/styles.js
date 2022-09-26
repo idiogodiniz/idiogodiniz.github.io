@@ -1,12 +1,17 @@
 import styled from 'styled-components';
 
 const StyledHome = styled.div`
+    @media screen and (max-width: 900px) {
+        .onscreen {
+            height: 4rem;
+        }
+    }
 `;
 
 export const Top = styled.div`
     padding: 15vh 5vw;
     .top__welcome-card {
-        width: 28%;
+        width: 30%;
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
         backdrop-filter: blur(5px);
         h1 {
@@ -22,16 +27,17 @@ export const Top = styled.div`
         }
     }
     .top__background {
+        margin-top: 2rem;
         width: 60%;
-        height: fit-content;
         img {
-            width: 30rem;
+            width: 30vw;
             height: auto;
         }
     }
     @media screen and (max-width: 900px) {
-        padding: 20% 0;
-        height: 85vh;
+        padding: 15% 0;
+        min-height: 35.7rem;
+        height: 75vh;
         .top__welcome-card {
             background-color: unset;
             box-shadow: none;
@@ -106,6 +112,72 @@ export const Main = styled.main`
             }
         }
     }
+    .section__knowledge {
+        width: 100%;
+        .section__knowledge-min {
+            min-height: 45vh;
+        }
+        .section__knowledge-carrousel {
+            margin: .4rem 0 1.6rem;
+            width: 150%;
+            left: -16%;
+            h2 {
+                opacity: .4;
+            }
+            h2:nth-child(3) {
+                opacity: inherit;
+            }
+        }
+        h2 {
+            font-family: 'inter-regular';
+            text-align: center;
+            cursor: pointer;
+            width: 17.5%;
+        }
+        h2:nth-child(3) {
+            font-family: 'inter-semibold';
+        }
+        .section__knowledge-card {
+            background-color: #fff;
+            margin: 1.5625% 1rem;
+            width: 17.5%;
+            height: 4.3rem;
+            padding: 1rem 1rem;
+            border-radius: 4%;
+            h3 {
+                color: #000;
+            }
+        }
+        .section__knowledge-view{
+            justify-content: flex-start;
+            align-items: flex-start;
+        }
+        @media screen and (max-width: 900px) {
+            justify-content: space-between;
+            .section__knowledge-carrousel {
+                width: 250%;
+                left: -42%;
+            }
+            h2 {
+                width: 25%;
+            }
+            .first, .last {
+                display: none;
+            }
+            .section__knowledge-card {
+                margin: 1rem 1.6%;
+                width: 30%;
+                padding: .7rem .7rem;
+                h3 {
+                    font-size: .8rem;
+                    line-height: 1rem;
+                }
+            }
+        }
+    }
+`;
+
+export const Footer = styled.footer`
 `;
 
 export default StyledHome;

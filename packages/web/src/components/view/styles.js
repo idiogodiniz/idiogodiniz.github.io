@@ -1,9 +1,12 @@
 import styled from 'styled-components';
 
 const StyledView = styled.div`
+    display: ${ props => props.view === true ? 'flex' : 'none' };
+    background-color: #ffffffa5;
+    flex-direction: row;
     height: 4rem;
     padding: 0 2rem;
-    backdrop-filter: blur(5px);
+    backdrop-filter: blur(10px);
     div:nth-child(1) {
         div {
             margin-left: .8rem;

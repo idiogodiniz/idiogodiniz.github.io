@@ -120,6 +120,9 @@ const Common = createGlobalStyle`
         width: fit-content;
         height: fit-content;
     }
+    .wrap {
+        flex-wrap: wrap;
+    }
     .jc-between {
         justify-content: space-between;
     }

@@ -1,0 +1,132 @@
+{
+    "content": [
+        {
+            "name": "Linguagens",
+            "key": 0,
+            "content": [
+                {
+                    "name": "Java",
+                    "img": ""
+                },
+                {
+                    "name": "JavaScript",
+                    "img": ""
+                },
+                {
+                    "name": "Python",
+                    "img": ""
+                },
+                {
+                    "name": "Typescript",
+                    "img": ""
+                },
+                {
+                    "name": "CSharp",
+                    "img": ""
+                },
+                {
+                    "name": "Lua",
+                    "img": ""
+                },
+                {
+                    "name": "HTML5",
+                    "img": ""
+                },
+                {
+                    "name": "CSS3",
+                    "img": ""
+                }
+            ]
+        },
+        {
+            "name": "Banco de Dados",
+            "content": [
+                {
+                    "name": "MySQL",
+                    "img": ""
+                },
+                {
+                    "name": "PostgreSQL",
+                    "img": ""
+                },
+                {
+                    "name": "MongoDB",
+                    "img": ""
+                }
+            ]
+        },
+        {
+            "name": "Frameworks e Libs",
+            "content": [
+                {
+                    "name": "React",
+                    "img": ""
+                }
+            ]
+        },
+        {
+            "name": "Hardware e Redes",
+            "content": [
+                {
+                    "name": "Manutenção e Suporte",
+                    "img": ""
+                },
+                {
+                    "name": "Arduino",
+                    "img": ""
+                },
+                {
+                    "name": "Infraestrutura de Redes",
+                    "img": ""
+                }
+            ]
+        },
+        {
+            "name": "Serviços Cloud",
+            "content": [
+                {
+                    "name": "Amazon Web Services",
+                    "img": ""
+                },
+                {
+                    "name": "Azure",
+                    "img": ""
+                },
+                {
+                    "name": "Google Cloud",
+                    "img": ""
+                },
+                {
+                    "name": "Oracle",
+                    "img": ""
+                }
+            ]
+        },
+        {
+            "name": "Extensões Vscode",
+            "content": [
+                {
+                    "name": "Docker",
+                    "img": ""
+                }
+            ]
+        },
+        {
+            "name": "Ferramentas",
+            "content": [
+                {
+                    "name": "Docker",
+                    "img": ""
+                },
+                {
+                    "name": "Yarn",
+                    "img": ""
+                },
+                {
+                    "name": "Git",
+                    "img": ""
+                }
+            ]
+        }
+    ]    
+}
