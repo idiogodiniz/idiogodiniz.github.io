@@ -34,7 +34,7 @@ export const Top = styled.div`
             height: auto;
         }
     }
-    @media screen and (max-width: 110px) {
+    @media screen and (max-width: 1100px) {
         padding: 15% 0;
         min-height: 35.7rem;
         height: 75vh;
