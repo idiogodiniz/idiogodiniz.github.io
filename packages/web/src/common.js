@@ -213,9 +213,6 @@ const Common = createGlobalStyle`
         width: 100%;
         height: 100%;
     }
-    .t-smooth {
-        transition: 2s ease-in-out;
-    }
 `;
 
 export default Common;

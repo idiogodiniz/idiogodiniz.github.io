@@ -11,11 +11,11 @@ const Index = _ => (
     <BrowserRouter>
         <Routes>
             <Route exact path='/' element={<View><Home /></View>} />
-            <Route path='/api' element={<View><Api /></View>} />
-            <Route path='/tools' element={<View><Tools /></View>} />
-            <Route path='/finder' element={<View><Finder /></View>} />
-            <Route path='/blog' element={<View><Blog /></View>} />
-            <Route path='/notebook' element={<View><Notebook /></View>} />
+            <Route exact path='/api' element={<View><Api /></View>} />
+            <Route exact path='/tools' element={<View><Tools /></View>} />
+            <Route exact path='/finder' element={<View><Finder /></View>} />
+            <Route exact path='/blog' element={<View><Blog /></View>} />
+            <Route exact path='/notebook' element={<View><Notebook /></View>} />
         </Routes>
     </BrowserRouter>
 );

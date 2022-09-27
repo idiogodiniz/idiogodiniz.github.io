@@ -54,6 +54,9 @@ export const Main = styled.main`
     .section__about {
         article {
             width: 60%;
+            h2:nth-child(n+2) {
+                margin-top: 1.7rem;
+            }
             p {
                 margin-bottom: .8rem;
             }
