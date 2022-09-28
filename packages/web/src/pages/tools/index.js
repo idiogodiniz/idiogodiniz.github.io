@@ -3,7 +3,6 @@ import StyledTools, {
     Tool,
     ModalTool
 } from './styles';
-import { delay } from '../../services';
 
 /* TOOLS
 /* - texto
@@ -13,22 +12,25 @@ import TextInvert from '../../components/tools/textInvert/index';
 
 const Tools = _ => {
     const [modal, setModal] = useState(false);
-    const [modalContent, setModalContent] = useState(<div></div>);
+    const [modalContent, setModalContent] = useState();
 
     const click = e => {
-        if (e.target.id === 'textInvert')
-            delay(500).then(_ => setModalContent(<TextInvert />))
-        if (e.target.id === 'close')
-            setModal(false);
-        else if (!modal)
+        const id = e.target.id === '' ? e.target.parentElement.id : e.target.id;
+        if (!modal)
             setModal(true);
+        else if (id === 'close' || id === 'overlay') {
+            setModal(false);
+            setModalContent();
+        }
+        if (id === 'textInvert')
+            setModalContent(<TextInvert />)
     };
 
     return (
         <StyledTools>
             {modal && (
                 <ModalTool className='fixed z4 w100 h100v container-column al-center jc-center'>
-                    <div className="modaltool__overlay wh100" />
+                    <div id='overlay' className="modaltool__overlay wh100" onClick={click} />
                     <div className='modaltool__content fixed container-column z5'>
                         <div className="w100"><div id='close' onClick={click}>x</div></div>
                         <div>{ modalContent }</div>

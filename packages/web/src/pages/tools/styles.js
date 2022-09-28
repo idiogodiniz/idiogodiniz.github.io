@@ -21,8 +21,7 @@ const StyledTools = styled.div`
 `;
 
 export const Tool = styled.div`
-    display: flex;
-    flex-direction: column;
+    display: block;
     width: 100%;
     border-left: .7rem solid #000;
     padding: 0 1.4rem;

@@ -1,4 +1,4 @@
-import React, { useState, useEffect} from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import StyledView, {
     OnOtherScreens
@@ -32,7 +32,7 @@ const View = props => {
             <StyledView view={show} className='w100 jc-between fixed top z3'>
                 <div className='container h100 al-center'>
                     <img className='view__logo-image' src='/assets/img/pictures/logo-black.png' alt='' />
-                    <div className='fit'>welcome</div>
+                    <div className='fit'>zedeogo</div>
                 </div>
                 <div className='container h100 al-center'>
                     <nav className='fit'>

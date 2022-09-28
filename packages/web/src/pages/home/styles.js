@@ -11,9 +11,7 @@ const StyledHome = styled.div`
 export const Top = styled.div`
     padding: 15vh 5vw;
     .top__welcome-card {
-        width: 30%;
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-        backdrop-filter: blur(5px);
+        width: 60%;
         h1 {
             margin-bottom: 1.4rem;
         }
@@ -35,13 +33,10 @@ export const Top = styled.div`
         }
     }
     @media screen and (max-width: 1100px) {
-        padding: 15% 0;
         min-height: 35.7rem;
         height: 75vh;
+        align-items: center;
         .top__welcome-card {
-            background-color: unset;
-            box-shadow: none;
-            backdrop-filter: unset;
             width: 85%;
         }
         .top__background {
@@ -65,8 +60,8 @@ export const Main = styled.main`
             }
         }
         .section__about-img {
-            width: 12rem;
-            height: 12rem;
+            width: 15rem;
+            height: 15rem;
             margin-right: 4rem;
             @media screen and (max-width: 900px) {
                 margin-right: 0;
@@ -74,11 +69,15 @@ export const Main = styled.main`
             }
         }
         img {
-            width: 12rem;
+            border: 6px solid #fff;
+            width: 15rem;
             height: auto;
         }
         @media screen and (max-width: 900px) {
             flex-direction: column-reverse;
+            img {
+                width: 12rem;
+            }
         }
     }
     .section__contactme{
@@ -146,7 +145,7 @@ export const Main = styled.main`
             width: 17.5%;
             height: 4.3rem;
             padding: 1rem 1rem;
-            border-radius: 4%;
+            border-radius: 10px;
             h3 {
                 color: #000;
             }

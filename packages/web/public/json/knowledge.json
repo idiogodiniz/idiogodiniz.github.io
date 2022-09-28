@@ -2,39 +2,46 @@
     "content": [
         {
             "name": "Linguagens",
-            "key": 0,
             "content": [
                 {
                     "name": "Java",
-                    "img": ""
+                    "img": "",
+                    "a": ""
                 },
                 {
                     "name": "JavaScript",
-                    "img": ""
+                    "img": "",
+                    "a": ""
                 },
                 {
                     "name": "Python",
-                    "img": ""
+                    "img": "",
+                    "a": ""
                 },
                 {
                     "name": "Typescript",
-                    "img": ""
+                    "img": "",
+                    "a": ""
                 },
                 {
                     "name": "CSharp",
-                    "img": ""
+                    "img": "",
+                    "a": ""
                 },
                 {
                     "name": "Lua",
-                    "img": ""
+                    "img": "",
+                    "a": ""
                 },
                 {
                     "name": "HTML5",
-                    "img": ""
+                    "img": "",
+                    "a": ""
                 },
                 {
                     "name": "CSS3",
-                    "img": ""
+                    "img": "",
+                    "a": ""
                 }
             ]
         },
@@ -43,15 +50,18 @@
             "content": [
                 {
                     "name": "MySQL",
-                    "img": ""
+                    "img": "",
+                    "a": ""
                 },
                 {
                     "name": "PostgreSQL",
-                    "img": ""
+                    "img": "",
+                    "a": ""
                 },
                 {
                     "name": "MongoDB",
-                    "img": ""
+                    "img": "",
+                    "a": ""
                 }
             ]
         },
@@ -60,7 +70,8 @@
             "content": [
                 {
                     "name": "React",
-                    "img": ""
+                    "img": "",
+                    "a": ""
                 }
             ]
         },
@@ -69,15 +80,18 @@
             "content": [
                 {
                     "name": "Manutenção e Suporte",
-                    "img": ""
+                    "img": "",
+                    "a": ""
                 },
                 {
                     "name": "Arduino",
-                    "img": ""
+                    "img": "",
+                    "a": ""
                 },
                 {
                     "name": "Infraestrutura de Redes",
-                    "img": ""
+                    "img": "",
+                    "a": ""
                 }
             ]
         },
@@ -86,19 +100,23 @@
             "content": [
                 {
                     "name": "Amazon Web Services",
-                    "img": ""
+                    "img": "",
+                    "a": ""
                 },
                 {
                     "name": "Azure",
-                    "img": ""
+                    "img": "",
+                    "a": ""
                 },
                 {
                     "name": "Google Cloud",
-                    "img": ""
+                    "img": "",
+                    "a": ""
                 },
                 {
                     "name": "Oracle",
-                    "img": ""
+                    "img": "",
+                    "a": ""
                 }
             ]
         },
@@ -106,8 +124,74 @@
             "name": "Extensões Vscode",
             "content": [
                 {
+                    "name": "Auto Rename Tag",
+                    "img": "",
+                    "a": ""
+                },
+                {
+                    "name": "Code Runner",
+                    "img": "",
+                    "a": ""
+                },
+                {
+                    "name": "Database Client",
+                    "img": "",
+                    "a": ""
+                },
+                {
+                    "name": "Dev Containers",
+                    "img": "",
+                    "a": ""
+                },
+                {
                     "name": "Docker",
-                    "img": ""
+                    "img": "",
+                    "a": ""
+                },
+                {
+                    "name": "Live Share",
+                    "img": "",
+                    "a": ""
+                },
+                {
+                    "name": "Markdown All in One",
+                    "img": "",
+                    "a": ""
+                },
+                {
+                    "name": "Material Icon Theme",
+                    "img": "",
+                    "a": ""
+                },
+                {
+                    "name": "Python",
+                    "img": "",
+                    "a": ""
+                },
+                {
+                    "name": "C++",
+                    "img": "",
+                    "a": ""
+                },
+                {
+                    "name": "C#",
+                    "img": "",
+                    "a": ""
+                },
+                {
+                    "name": "Svg Preview",
+                    "img": "",
+                    "a": ""
+                },
+                {
+                    "name": "Thunder Client",
+                    "img": "",
+                    "a": ""
+                },
+                {
+                    "name": "Vscode Styled Components",
+                    "img": "",
+                    "a": ""
                 }
             ]
         },
@@ -116,15 +200,23 @@
             "content": [
                 {
                     "name": "Docker",
-                    "img": ""
+                    "img": "",
+                    "a": ""
                 },
                 {
                     "name": "Yarn",
-                    "img": ""
+                    "img": "",
+                    "a": ""
                 },
                 {
                     "name": "Git",
-                    "img": ""
+                    "img": "",
+                    "a": ""
+                },
+                {
+                    "name": "Figma",
+                    "img": "",
+                    "a": ""
                 }
             ]
         }

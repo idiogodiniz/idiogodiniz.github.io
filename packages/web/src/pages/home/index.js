@@ -62,7 +62,7 @@ const Home = _ => {
     return (
         <StyledHome className='container-column wh100 al-center'>
             <Top className='container jc-between w100 limit-view'>
-                <Section className='top__welcome-card' bg='EEEEEE' tag='welcome'>
+                <Section className='top__welcome-card' bg='FFF' tag='welcome'>
                     <h1>Seja bem vindo(a) ao portfólio de José Diniz</h1>
                     <p>Espero que encontre o que precisa</p>
                     <div className='container fit'>
@@ -71,11 +71,6 @@ const Home = _ => {
                         <a className='fit' href='https://www.instagram.com/zedeogo'><img src='/assets/img/pictures/instagram-black.png' alt='' /></a>
                     </div>
                 </Section>
-                <div className='top__background container jc-center al-center h100'>
-                    <div className='fit'>
-                        <img src='/assets/img/pictures/background-top.png' alt='' />
-                    </div>
-                </div>
             </Top>
             <Main className='container-column w100 limit-view'>
                 <Section bg='000' tag='about'>
@@ -110,7 +105,7 @@ const Home = _ => {
                             </p>
                         </article>
                         <div className='section__about-img relative'>
-                            <img className='relative z2' src='/assets/img/pictures/user-image.jpg' alt='' />
+                            <img className='relative z2' src='/assets/img/pictures/jose.jpg' alt='' />
                             <div className='box-shadow-white-right' />
                         </div>
                     </div>
