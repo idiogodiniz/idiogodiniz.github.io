@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useLayoutEffect } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import StyledView, {
     OnOtherScreens
@@ -11,7 +11,7 @@ const View = props => {
 
     const onChangePage = e => history(e.target.href);
 
-    useEffect(_ => {
+    useLayoutEffect(_ => {
         const controlHeader = _ => {
             let currentY = window.scrollY;
             delay(50).then(_ => {

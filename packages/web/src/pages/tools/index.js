@@ -1,14 +1,11 @@
-import React, { useState } from 'react';
+import React, { useState, useLayoutEffect } from 'react';
 import StyledTools, {
     Tool,
     ModalTool
 } from './styles';
 
-/* TOOLS
-/* - texto
-/*   textInvert
-*/
 import TextInvert from '../../components/tools/textInvert/index';
+import UpperLowerText from '../../components/tools/upperLowerText';
 
 const Tools = _ => {
     const [modal, setModal] = useState(false);
@@ -21,10 +18,36 @@ const Tools = _ => {
         else if (id === 'close' || id === 'overlay') {
             setModal(false);
             setModalContent();
-        }
-        if (id === 'textInvert')
-            setModalContent(<TextInvert />)
+        };
+        switch (id) {
+            case 'textInvert':
+                setModalContent(<TextInvert />);
+                break;
+            case 'upperLowerText':
+                setModalContent(<UpperLowerText />);
+                break;
+            default:
+                break;
+        };
     };
+
+    useLayoutEffect(_ => {
+        const identifyKey = e => {
+            switch (e) {
+                case 'Escape':
+                    if (modal)
+                        setModal(false);
+                    break;
+                default:
+                    break;
+            };
+        };
+        window.addEventListener('keypress', identifyKey);
+        return _ => {
+            window.removeEventListener('keypress', identifyKey);
+        };
+        // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, []);
 
     return (
         <StyledTools>
@@ -32,8 +55,12 @@ const Tools = _ => {
                 <ModalTool className='fixed z4 w100 h100v container-column al-center jc-center'>
                     <div id='overlay' className="modaltool__overlay wh100" onClick={click} />
                     <div className='modaltool__content fixed container-column z5'>
-                        <div className="w100"><div id='close' onClick={click}>x</div></div>
-                        <div>{ modalContent }</div>
+                        <div className='modaltool__view wh100 relative'>
+                            {modalContent}
+                            <div className='container jc-center absolute w100 modaltool__close-window'>
+                                <button id='close' className='capitalize fit cFFFFFF b000000' onClick={click}>fechar</button>
+                            </div>
+                        </div>
                     </div>
                 </ModalTool>
             )}
@@ -46,9 +73,9 @@ const Tools = _ => {
                 <div className="container-column w100">
                     <Tool id='textInvert' onClick={click}>
                         <h3>Inverter Texto</h3>
-                        <p>Gera um novo texto invertido.</p>
+                        <p>Gera um novo texto invertido ou reverte o texto.</p>
                     </Tool>
-                    <Tool id='' onClick={click}>
+                    <Tool id='upperLowerText' onClick={click}>
                         <h3>Maiúsculas e Minúsculas</h3>
                         <p>Converte o texto para letras maiúsculas ou minúsculas.</p>
                     </Tool>

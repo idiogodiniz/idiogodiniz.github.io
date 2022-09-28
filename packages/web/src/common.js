@@ -67,6 +67,7 @@ const Common = createGlobalStyle`
         text-decoration: none;
         list-style: none;
         font-weight: inherit;
+        outline: none;
     }
     .o-hidden {
        overflow: hidden; 

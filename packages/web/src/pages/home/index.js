@@ -23,18 +23,26 @@ const Home = _ => {
     };
 
     const click = e => {
-        if (e.target.id === 'kp1') {
-            setPosition(knowledge.length - 3);
-            setChangedPosition(!changedPosition);
-        } else if (e.target.id === 'kp2') {
-            setPosition(knowledge.length - 2);
-            setChangedPosition(!changedPosition);
-        } else if (e.target.id === 'kp4') {
-            setPosition(0);
-            setChangedPosition(!changedPosition);
-        } else if (e.target.id === 'kp5') {
-            setPosition(1);
-            setChangedPosition(!changedPosition);
+        const id = e.target.id;
+        switch (id) {
+            case 'kp1':
+                setPosition(knowledge.length - 3);
+                setChangedPosition(!changedPosition);
+                break;
+            case 'kp2':
+                setPosition(knowledge.length - 2);
+                setChangedPosition(!changedPosition);
+                break;
+            case 'kp4':
+                setPosition(0);
+                setChangedPosition(!changedPosition);
+                break;
+            case 'kp5':
+                setPosition(1);
+                setChangedPosition(!changedPosition);
+                break;    
+            default:
+                break;
         };
     };
 

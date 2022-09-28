@@ -8,6 +8,9 @@ const StyledTools = styled.div`
         line-height: 1rem;
         padding: .7rem .8rem .1rem;
     }
+    h3 {
+        font-family: 'inter-medium';
+    }
     section:nth-child(n + 2) > div > h2{
         margin-top: 2.7rem;
     }
@@ -32,24 +35,30 @@ export const Tool = styled.div`
 export const ModalTool = styled.div`
     top: 0;
     left: 0;
-    #close {
-        cursor: pointer;
-        width: fit-content;
-        height: fit-content;
-        font-size: 1.7rem;
-        font-family: 'inter-bold';
-        color: #242424;
-    }
     .modaltool__overlay {
-        background-color: #242424c4;
+        background-color: #000000c4;
         backdrop-filter: blur(3px);
     }
     .modaltool__content {
         width: 94vw;
         height: 92vh;
-        background-color: #ffffffcc;
-        border-radius: .3rem;
-        padding: .6rem 1rem;
+        background-color: #fff;
+        border-radius: 6px;
+        padding: 1rem;
+        .modaltool__view {
+            border-radius: 6px;
+        }
+        .modaltool__close-window {
+            bottom: 0;
+            padding: 1rem .4rem;
+            button {
+                font-size: 1.3rem;
+                cursor: pointer;
+                border: none;
+                padding: .5rem 1.3rem;
+                border-radius: 6px;
+            }
+        }
     }
 `;
 
