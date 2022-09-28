@@ -75,6 +75,10 @@ export const Main = styled.main`
         }
         @media screen and (max-width: 900px) {
             flex-direction: column-reverse;
+            .section__about-img {
+                width: 12rem;
+                height: 12rem;
+            }
             img {
                 width: 12rem;
             }
