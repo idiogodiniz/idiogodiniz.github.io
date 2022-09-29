@@ -149,7 +149,6 @@ export const Main = styled.main`
             width: 17.5%;
             height: 4.3rem;
             padding: 1rem 1rem;
-            border-radius: 10px;
             h3 {
                 color: #000;
             }
@@ -175,6 +174,7 @@ export const Main = styled.main`
                 width: 30%;
                 padding: .7rem .7rem;
                 h3 {
+                    font-family: 'inter-medium';
                     font-size: .8rem;
                     line-height: 1rem;
                 }

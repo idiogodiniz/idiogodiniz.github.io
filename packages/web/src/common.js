@@ -25,6 +25,16 @@ const Common = createGlobalStyle`
         font-family: 'inter-thin';
         src: url('/assets/fonts/Inter-Thin.ttf');
     }
+    * {
+        color: #000;
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        text-decoration: none;
+        list-style: none;
+        font-weight: inherit;
+        outline: none;
+    }
     .limit-view {
         max-width: 1920px !important;
     }
@@ -40,9 +50,10 @@ const Common = createGlobalStyle`
         font-size: 1.2rem;
         line-height: 1.5rem;
     }
-    h3, h3 > span, h3 > a{
-        font-size: 1.1rem;
-        line-height: 1.3rem;
+    h3, h3 > span, h3 > a, p, p > span, p > a, .link, .link > span{
+        font-size: 1.2rem;
+        line-height: 1.4rem;
+        letter-spacing: .04rem;
     }
     h4, h4 > span, h4 > a{
         
@@ -53,23 +64,11 @@ const Common = createGlobalStyle`
     h6, h6 > span, h6 > a{
         
     }
-    p, p > span, p > a, .link, .link > span{
-        font-size: 1.2rem;
-        line-height: 1.4rem;
-        letter-spacing: .04rem;
-    }
-    * {
+    p, p > span, p > a, .link, .link > span {
         font-family: 'inter-regular';
-        color: #000;
-        padding: 0;
-        margin: 0;
-        box-sizing: border-box;
-        text-decoration: none;
-        list-style: none;
-        font-weight: inherit;
-        outline: none;
     }
     textarea, input {
+        font-family: 'inter-regular';
         border: 2px solid #000;
         resize: none;
         padding: 1rem;
@@ -78,10 +77,10 @@ const Common = createGlobalStyle`
         border: none;
         padding: .2rem .4rem;
         background-color: #000;
-        font-family: 'inter-medium';
         color: #fff;
     }
     button {
+        font-family: 'inter-medium';
         font-size: 1.3rem;
         cursor: pointer;
         border: none;

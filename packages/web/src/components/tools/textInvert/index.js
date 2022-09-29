@@ -56,7 +56,7 @@ const TextInvert = _ => {
                 <div className='text__view'>
                     <h3>Texto invertido</h3>
                     <div className='h100'>
-                        <textarea className='wh100' onMouseUp={_ => setSelected('output')} value={output} onChange={e => setOutput(e.target.value)} name="" id=""></textarea>
+                        <textarea className='wh100' spellCheck='false' onMouseUp={_ => setSelected('output')} value={output} onChange={e => setOutput(e.target.value)} name="" id=""></textarea>
                     </div>
                 </div>
             </div>

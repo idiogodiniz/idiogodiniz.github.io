@@ -283,6 +283,10 @@ const Tools = _ => {
                         <h3>Calculadora Regra de 3 Simples</h3>
                         <p>Faz o cálculo da regra de 3 rapidamente.</p>
                     </Tool>
+                    <Tool id='' onClick={click}>
+                        <h3>Calculadora Regra de 3 Composta</h3>
+                        <p>Faz o cálculo da regra de 3 rapidamente.</p>
+                    </Tool>
                 </div>
             </section>
             <section>
@@ -296,13 +300,29 @@ const Tools = _ => {
                         <h3>Conversor de Moedas</h3>
                         <p>Faz a conversão de valores entre diversas moedas do mundo. Taxas atualizadas em tempo real.</p>
                     </Tool>
+                    <Tool>
+                        <h3>Calcular Percentuais</h3>
+                        <p>Calcular o percentual, aumento percentual, desconto percentual, margem de venda, variação percentual ou relação percentual.</p>
+                    </Tool>
+                    <Tool>
+                        <h3>Calcular Parcelas</h3>
+                        <p>Calcular parcelas a partir de um valor e quantidade de parcelas.</p>
+                    </Tool>
+                    <Tool>
+                        <h3>Calcular Lucro</h3>
+                        <p>Calcular lucro excluindo o valor inicial gasto.</p>
+                    </Tool>
+                    <Tool>
+                        <h3>Calcular Montante</h3>
+                        <p>Calcular valor acumulado.</p>
+                    </Tool>
+                    <Tool>
+                        <h3>Prever Pagamentos de Mesmo Valor</h3>
+                        <p>Prever pagamentos de mesmo valor rapidamente.</p>
+                    </Tool>
                     <Tool id='' onClick={click}>
                         <h3>Simulador de Poupança</h3>
                         <p>Calcula quanto você terá se poupar um valor mensalmente.</p>
-                    </Tool>
-                    <Tool id='' onClick={click}>
-                        <h3>Simulador de Financiamento</h3>
-                        <p>Simula o financiamento de veículos, imóveis ou qualquer outro bem.</p>
                     </Tool>
                     <Tool id='' onClick={click}>
                         <h3>Primeiro Milhão</h3>
@@ -315,6 +335,34 @@ const Tools = _ => {
                     <Tool id='' onClick={click}>
                         <h3>Valor do Salário Mínimo</h3>
                         <p>Consulte o valor do salário mínimo atual e veja o histórico de reajustes</p>
+                    </Tool>
+                    <Tool>
+                        <h3>Calcular Juros Simples</h3>
+                        <p>Calcular valor futuro, valor presentel (ou principal), taxa de juros ou número de períodos.</p>
+                    </Tool>
+                    <Tool>
+                        <h3>Calcular Juros Compostos</h3>
+                        <p>Calcular valor futuro, valor presentel (ou principal), taxa de juros ou número de períodos.</p>
+                    </Tool>
+                    <Tool>
+                        <h3>Converter Taxa de Juros</h3>
+                        <p>Converter taxa de juros de forma rápida.</p>
+                    </Tool>
+                    <Tool>
+                        <h3>Calcular Financiamentos e Empréstimos (Tabela Price e SAC)</h3>
+                        <p>Calcular valor períodico, períodos e taxa de juros.</p>
+                    </Tool>
+                    <Tool>
+                        <h3>Calcular Retorno Sobre Investimento e Viabilidade Financeira</h3>
+                        <p>Calcular retorno sobre investimento e viabilidade financeira rapidamente.</p>
+                    </Tool>
+                    <Tool>
+                        <h3>Calcular Saldo Devedor</h3>
+                        <p>Calcular saldo devedor rapidamente.</p>
+                    </Tool>
+                    <Tool>
+                        <h3>Calculadora HP-12C Online</h3>
+                        <p>Use uma calculadora HP-12C online.</p>
                     </Tool>
                 </div>
             </section>
@@ -520,6 +568,26 @@ const Tools = _ => {
                     <Tool id='' onClick={click}>
                         <h3>Calcular Período Fértil</h3>
                         <p>Calcula o período com maior probabilidade de gravidez.</p>
+                    </Tool>
+                    <Tool id='' onClick={click}>
+                        <h3>Calcular Testosterona Livre</h3>
+                        <p>Calcular testosterona livre de forma rápida.</p>
+                    </Tool>
+                    <Tool id='' onClick={click}>
+                        <h3>Calcular Risco de Câncer de Prostata</h3>
+                        <p>Calcular risco de câncer de prostata de forma rápida.</p>
+                    </Tool>
+                    <Tool id='' onClick={click}>
+                        <h3>Calcular Estimativa de Filtração Glomerular</h3>
+                        <p>Calcular estimativa de filtração glomerular de forma rápida.</p>
+                    </Tool>
+                    <Tool id='' onClick={click}>
+                        <h3>Calcular Diluição e Rediluição de Medicamentos</h3>
+                        <p>Calcular diluição e rediluição de medicamentos de forma rápida.</p>
+                    </Tool>
+                    <Tool id='' onClick={click}>
+                        <h3>Calcular Gotejamento de Medicamento</h3>
+                        <p>Calcular gotejamento de medicamento de forma rápida.</p>
                     </Tool>
                 </div>
             </section>

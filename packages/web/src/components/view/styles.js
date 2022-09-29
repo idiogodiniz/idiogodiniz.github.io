@@ -7,6 +7,7 @@ const StyledView = styled.div`
     height: 4rem;
     padding: 0 2rem;
     backdrop-filter: blur(10px);
+    font-family: 'inter-regular';
     div:nth-child(1) {
         div {
             margin-left: .8rem;

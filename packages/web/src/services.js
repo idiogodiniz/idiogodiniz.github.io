@@ -46,7 +46,7 @@ export const orietationText = (input, type) => {
             return input.toUpperCase();
         case 'text':
             input = input.charAt(0).toUpperCase() + input.substr(1);
-            return input.replace(/\. \S\w*/g, str => str.substr(0, 2).toLowerCase() + str.charAt(2).toUpperCase() + str.substr(3).toLowerCase())
+            return input.replace(/\. \S\w*|\? \S\w*|! \S\w*/g, str => str.substr(0, 2) + str.charAt(2).toUpperCase() + str.substr(3))
         default:
             break;
     };
@@ -211,6 +211,9 @@ export const charCounter = input => input.replace(/ |.|,/g, '').length;
 /* --calculadora regra de tres simples--
 */
 
+/* --calculadora regra de tres composta--
+*/
+
 /*
 /* ======================================
 /* ||                                  ||
@@ -225,7 +228,19 @@ export const charCounter = input => input.replace(/ |.|,/g, '').length;
 /* --simulador de poupança--
 */
 
-/* --simulador de financiamento--
+/* --calcular percentual--
+*/
+
+/* --calcular parcelas--
+*/
+
+/* --calcular lucro--
+*/
+
+/* --calcular montante--
+*/
+
+/* --prever pagamentos de mesmo valor--
 */
 
 /* --primeiro milhão--
@@ -235,6 +250,27 @@ export const charCounter = input => input.replace(/ |.|,/g, '').length;
 */
 
 /* --valor do salário mínimo--
+*/
+
+/* --calcular juros simples--
+*/
+
+/* --calcular juros compostos--
+*/
+
+/* --converter taxa de juros--
+*/
+
+/* --calcular financiamento e emprestimos--
+*/
+
+/* --calcular retorno sobre investimentos e viabilidade financeira--
+*/
+
+/* --calcular saldo devedor--
+*/
+
+/* --calculadora hp-12c online--
 */
 
 /*
@@ -395,6 +431,21 @@ export const charCounter = input => input.replace(/ |.|,/g, '').length;
 */
 
 /* --calcular periodo fertil--
+*/
+
+/* --calcular testosterona livre--
+*/
+
+/* --calcular risco de cancer de prostata--
+*/
+
+/* --calcular estimativa de filtracao glomerular--
+*/
+
+/* --calcular diluicao e rediluicao de medicamentos--
+*/
+
+/* --calcular gotejamento de medicamento--
 */
 
 /*
