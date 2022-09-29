@@ -26,12 +26,31 @@ export const delay = input => new Promise(resolve => setTimeout(resolve, input))
 export const invertTextFunction = input => {
     let output = '';
     for (let i = input.length - 1; i >= 0; i--)
-        output += input[i];
+        output += input.charAt(i);
     return output;
-}
+};
 
 /* --maiusculas para minusculas--
+/*
+/* recebe um texto
+/* identifica o tipo
+/* retorna um novo texto modificado
 */
+export const orietationText = (input, type) => {
+    switch (type) {
+        case 'capitalize':
+            return input.replace(/\S\w*/g, str => str.charAt(0).toUpperCase() + str.substr(1));
+        case 'lowercase':
+            return input.toLowerCase();
+        case 'uppercase':
+            return input.toUpperCase();
+        case 'text':
+            input = input.charAt(0).toUpperCase() + input.substr(1);
+            return input.replace(/\. \S\w*/g, str => str.substr(0, 2).toLowerCase() + str.charAt(2).toUpperCase() + str.substr(3).toLowerCase())
+        default:
+            break;
+    };
+};
 
 /* --remover linhas duplicadas--
 */
@@ -195,10 +214,219 @@ export const charCounter = input => input.replace(/ |.|,/g, '').length;
 /*
 /* ======================================
 /* ||                                  ||
-/* ||             numeros              ||
+/* ||             finanças             ||
 /* ||                                  ||
 /* ======================================
 */
 
-/* ----
+/* --conversor de moedas--
+*/
+
+/* --simulador de poupança--
+*/
+
+/* --simulador de financiamento--
+*/
+
+/* --primeiro milhão--
+*/
+
+/* --código dos bancos--
+*/
+
+/* --valor do salário mínimo--
+*/
+
+/*
+/* ======================================
+/* ||                                  ||
+/* ||           desenvolvedor          ||
+/* ||                                  ||
+/* ======================================
+*/
+
+/* --gerador de cep--
+*/
+
+/* --gerador de cpf--
+*/
+
+/* --gerador de cnjp--
+*/
+
+/* --gerador de cartao de credito--
+*/
+
+/* --gerador de conta bancaria--
+*/
+
+/* --gerador de pessoas--
+*/
+
+/* --gerador de lorem ipsum--
+*/
+
+/*
+/* ======================================
+/* ||                                  ||
+/* ||             internet             ||
+/* ||                                  ||
+/* ======================================
+*/
+
+/* --meu ip--
+*/
+
+/* --teste de velocidade--
+*/
+
+/* --teste de portas--
+*/
+
+/* --whois--
+*/
+
+/* --localizar ip--
+*/
+
+/*
+/* ======================================
+/* ||                                  ||
+/* ||          redes sociais           ||
+/* ||                                  ||
+/* ======================================
+*/
+
+/* --nao seguidores no instagram--
+*/
+
+/* --sorteio no instagram--
+*/
+
+/* --contador de inscritos em tempo real--
+*/
+
+/* --ordenar conta do instagram--
+*/
+
+/* --gerador de link do whatsapp--
+*/
+
+/*
+/* ======================================
+/* ||                                  ||
+/* ||           multimídia             ||
+/* ||                                  ||
+/* ======================================
+*/
+
+/* --converter imagem em texto--
+*/
+
+/* --juntar pdf--
+*/
+
+/* --comprimir pdf--
+*/
+
+/* --comprimir png--
+*/
+
+/* --comprimir jpg--
+*/
+
+/* --foto em preto e branco--
+*/
+
+/* --redimencionar imagem--
+*/
+
+/* --recortar fotos--
+*/
+
+/* --capturar sites--
+*/
+
+/* --converter arquivo--
+*/
+
+/* --converter audio--
+*/
+
+/* --converter cad--
+*/
+
+/* --converter documento--
+*/
+
+/* --converter ebook--
+*/
+
+/* --converter fonte--
+*/
+
+/* --converter imagem--
+*/
+
+/* --converter slides--
+*/
+
+/* --converter planilhas--
+*/
+
+/* --converter vetor--
+*/
+
+/* --converter video--
+*/
+
+/*
+/* ======================================
+/* ||                                  ||
+/* ||            medicina              ||
+/* ||                                  ||
+/* ======================================
+*/
+
+/* --calcular imc--
+*/
+
+/* --calculadora gestacional--
+*/
+
+/* --calcular periodo fertil--
+*/
+
+/*
+/* ======================================
+/* ||                                  ||
+/* ||            documentos            ||
+/* ||                                  ||
+/* ======================================
+*/
+
+/* --recibo online--
+*/
+
+/* --nota promissoria online--
+*/
+
+/*
+/* ======================================
+/* ||                                  ||
+/* ||             diversos             ||
+/* ||                                  ||
+/* ======================================
+*/
+
+/* --signos e datas--
+*/
+
+/* --leitura rapida--
+*/
+
+/* --distancia entre cidades--
+*/
+
+/* --minha localizacao atual--
 */

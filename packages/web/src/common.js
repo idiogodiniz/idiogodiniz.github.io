@@ -69,6 +69,24 @@ const Common = createGlobalStyle`
         font-weight: inherit;
         outline: none;
     }
+    textarea, input {
+        border: 2px solid #000;
+        resize: none;
+        padding: 1rem;
+    }
+    select {
+        border: none;
+        padding: .2rem .4rem;
+        background-color: #000;
+        font-family: 'inter-medium';
+        color: #fff;
+    }
+    button {
+        font-size: 1.3rem;
+        cursor: pointer;
+        border: none;
+        padding: .5rem 1.3rem;
+    }
     .o-hidden {
        overflow: hidden; 
     }
@@ -80,6 +98,9 @@ const Common = createGlobalStyle`
     }
     .uppercase {
         text-transform: uppercase;
+    }
+    .lowercase {
+        text-transform: lowercase;
     }
     .nomin {
         min-height: inherit;

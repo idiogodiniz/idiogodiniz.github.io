@@ -55,7 +55,7 @@ const Tools = _ => {
                 <ModalTool className='fixed z4 w100 h100v container-column al-center jc-center'>
                     <div id='overlay' className="modaltool__overlay wh100" onClick={click} />
                     <div className='modaltool__content fixed container-column z5'>
-                        <div className='modaltool__view wh100 relative'>
+                        <div className='wh100 relative'>
                             {modalContent}
                             <div className='container jc-center absolute w100 modaltool__close-window'>
                                 <button id='close' className='capitalize fit cFFFFFF b000000' onClick={click}>fechar</button>

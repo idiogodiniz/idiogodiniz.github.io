@@ -1,5 +1,5 @@
 import React, { useState, useLayoutEffect } from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import StyledView, {
     OnOtherScreens
 } from './styles';
@@ -7,9 +7,6 @@ import { delay } from '../../services';
 
 const View = props => {
     const [show, setShow] = useState(true);
-    const history = useNavigate();
-
-    const onChangePage = e => history(e.target.href);
 
     useLayoutEffect(_ => {
         const controlHeader = _ => {
@@ -38,22 +35,19 @@ const View = props => {
                     <nav className='fit'>
                         <ul className='fit container'>
                             <li>
-                                <Link to='/' onClick={onChangePage}>Página Inicial</Link>
+                                <Link to='/'>Página Inicial</Link>
                             </li>
                             <li>
-                                <Link to='/api' onClick={onChangePage}>Api</Link>
+                                <Link to='/tools'>Ferramentas</Link>
                             </li>
                             <li>
-                                <Link to='/tools' onClick={onChangePage}>Ferramentas</Link>
+                                <Link to='/finder'>Finder</Link>
                             </li>
                             <li>
-                                <Link to='/finder' onClick={onChangePage}>Finder</Link>
+                                <Link to='/blog'>Blog</Link>
                             </li>
                             <li>
-                                <Link to='/blog' onClick={onChangePage}>Blog</Link>
-                            </li>
-                            <li>
-                                <Link to='/notebook' onClick={onChangePage}>Caderno</Link>
+                                <Link to='/notebook'>Caderno</Link>
                             </li>
                         </ul>
                     </nav>
@@ -66,22 +60,19 @@ const View = props => {
                 <nav className='wh100'>
                     <ul className='container jc-between al-center wh100'>
                         <li>
-                            <Link to='/' onClick={onChangePage}><img src='/assets/img/pictures/home-white.png' alt='' /></Link>
+                            <Link to='/'><img src='/assets/img/pictures/home-white.png' alt='' /></Link>
                         </li>
                         <li>
-                            <Link to='/api' onClick={onChangePage}><img src='/assets/img/pictures/api-white.png' alt='' /></Link>
+                            <Link to='/tools'><img src='/assets/img/pictures/tools-white.png' alt='' /></Link>
                         </li>
                         <li>
-                            <Link to='/tools' onClick={onChangePage}><img src='/assets/img/pictures/tools-white.png' alt='' /></Link>
+                            <Link to='/finder'><img src='/assets/img/pictures/search-white.png' alt='' /></Link>
                         </li>
                         <li>
-                            <Link to='/finder' onClick={onChangePage}><img src='/assets/img/pictures/search-white.png' alt='' /></Link>
+                            <Link to='/blog'><img src='/assets/img/pictures/blog-white.png' alt='' /></Link>
                         </li>
                         <li>
-                            <Link to='/blog' onClick={onChangePage}><img src='/assets/img/pictures/blog-white.png' alt='' /></Link>
-                        </li>
-                        <li>
-                            <Link to='/notebook' onClick={onChangePage}><img src='/assets/img/pictures/notebook-white.png' alt='' /></Link>
+                            <Link to='/notebook'><img src='/assets/img/pictures/notebook-white.png' alt='' /></Link>
                         </li>
                     </ul>
                 </nav>

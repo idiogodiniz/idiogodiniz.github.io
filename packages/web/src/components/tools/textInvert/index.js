@@ -4,19 +4,25 @@ import { invertTextFunction } from '../../../services';
 
 const StyledTextInvert = styled.div`
     .text__content {
-        height: calc(100% - 4rem);
-        padding: 2rem 1rem 4rem;
+        height: 100%;
+        padding: 1rem .8rem 4rem;
         h3 {
             height: 2rem;
         }
         .text__view {
             width: 48%;
             height: 100%;
+            div {
+                padding: 0 0 3rem;
+            }
         }
-    }
-    textarea {
-        resize: none;
-        padding: 1rem;
+        @media screen and (max-width: 900px) {
+            flex-direction: column;
+            .text__view {
+                width: 100%;
+                height: 49%;
+            }
+        }
     }
 `;
 

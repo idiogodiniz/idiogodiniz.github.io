@@ -5,8 +5,8 @@ const StyledTools = styled.div`
     h2 {
         font-family: 'inter-medium';
         font-size: 1.7rem;
-        line-height: 1rem;
-        padding: .7rem .8rem .1rem;
+        line-height: 1.7rem;
+        padding: .4rem .8rem 0;
     }
     h3 {
         font-family: 'inter-medium';
@@ -20,6 +20,11 @@ const StyledTools = styled.div`
     }
     @media screen and (max-width: 1000px) {
         padding: 5rem 1rem;
+        h2 {
+            font-size: 1.2rem;
+            line-height: 1.2rem;
+            padding: .4rem .8rem 0;
+        }
     }
 `;
 
@@ -43,21 +48,10 @@ export const ModalTool = styled.div`
         width: 94vw;
         height: 92vh;
         background-color: #fff;
-        border-radius: 6px;
         padding: 1rem;
-        .modaltool__view {
-            border-radius: 6px;
-        }
         .modaltool__close-window {
             bottom: 0;
             padding: 1rem .4rem;
-            button {
-                font-size: 1.3rem;
-                cursor: pointer;
-                border: none;
-                padding: .5rem 1.3rem;
-                border-radius: 6px;
-            }
         }
     }
 `;
