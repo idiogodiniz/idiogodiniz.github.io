@@ -200,9 +200,12 @@ export const Main = styled.main`
             .section__knowledge-carrousel {
                 width: 250%;
                 left: -43%;
-            }
-            h2 {
+                h2 {
                 width: 25%;
+                :hover {
+                    color: #fff
+                }
+            }
             }
             .first, .last {
                 display: none;
@@ -215,7 +218,7 @@ export const Main = styled.main`
                     font-size: .8rem;
                     line-height: 1rem;
                 }
-                @media screen and (max-width: 400px) {
+                @media screen and (max-width: 500px) {
                     margin: 1rem 0;
                     width: 100%;
                 }
