@@ -1,8 +1,10 @@
 import styled from 'styled-components';
 
 const StyledTools = styled.div`
-    padding: 5rem 4rem;
+    padding: 8rem 4rem;
     h2 {
+        position: absolute;
+        bottom: -4px;
         font-family: 'inter-medium';
         font-size: 1.7rem;
         line-height: 1.7rem;
@@ -11,7 +13,7 @@ const StyledTools = styled.div`
     h3 {
         font-family: 'inter-medium';
     }
-    section:nth-child(n + 2) > div > h2{
+    section:nth-child(n + 2) {
         margin-top: 2.7rem;
     }
     .tools__h2-line {

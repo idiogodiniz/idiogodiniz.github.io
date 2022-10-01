@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import StyledView, {
     OnOtherScreens
 } from './styles';
-import { delay } from '../../services';
+import { delay } from '../../services/services';
 
 const View = props => {
     const [show, setShow] = useState(true);

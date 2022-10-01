@@ -5,43 +5,48 @@
             "content": [
                 {
                     "name": "Java",
-                    "img": "",
-                    "a": ""
+                    "img": "/assets/img/pictures/knowledge/java.avif",
+                    "a": "https://docs.oracle.com/en/java/"
                 },
                 {
                     "name": "JavaScript",
-                    "img": "",
-                    "a": ""
+                    "img": "/assets/img/pictures/knowledge/javascript.png",
+                    "a": "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
                 },
                 {
                     "name": "Python",
-                    "img": "",
-                    "a": ""
+                    "img": "/assets/img/pictures/knowledge/python.png",
+                    "a": "https://www.codecademy.com/resources/docs/python"
                 },
                 {
                     "name": "Typescript",
-                    "img": "",
-                    "a": ""
+                    "img": "/assets/img/pictures/knowledge/typescript.svg",
+                    "a": "https://devdocs.io/typescript/"
                 },
                 {
                     "name": "CSharp",
-                    "img": "",
-                    "a": ""
+                    "img": "/assets/img/pictures/knowledge/csharp.png",
+                    "a": "https://learn.microsoft.com/en-us/dotnet/csharp/"
                 },
                 {
                     "name": "Lua",
-                    "img": "",
-                    "a": ""
+                    "img": "/assets/img/pictures/knowledge/lua.svg",
+                    "a": "https://www.lua.org/docs.html"
+                },
+                {
+                    "name": "C++",
+                    "img": "/assets/img/pictures/knowledge/c++.png",
+                    "a": "https://www.codecademy.com/resources/docs/cpp"
                 },
                 {
                     "name": "HTML5",
-                    "img": "",
-                    "a": ""
+                    "img": "/assets/img/pictures/knowledge/html.png",
+                    "a": "https://developer.mozilla.org/en-US/docs/Web/HTML"
                 },
                 {
                     "name": "CSS3",
-                    "img": "",
-                    "a": ""
+                    "img": "/assets/img/pictures/knowledge/css.png",
+                    "a": "https://developer.mozilla.org/en-US/docs/Web/CSS"
                 }
             ]
         },
@@ -50,18 +55,18 @@
             "content": [
                 {
                     "name": "MySQL",
-                    "img": "",
-                    "a": ""
+                    "img": "/assets/img/pictures/knowledge/mysql.png",
+                    "a": "https://dev.mysql.com/doc/"
                 },
                 {
                     "name": "PostgreSQL",
-                    "img": "",
-                    "a": ""
+                    "img": "/assets/img/pictures/knowledge/postgresql.png",
+                    "a": "https://www.postgresql.org/docs/current/index.html"
                 },
                 {
                     "name": "MongoDB",
-                    "img": "",
-                    "a": ""
+                    "img": "/assets/img/pictures/knowledge/mongodb.png",
+                    "a": "https://www.mongodb.com/docs/"
                 }
             ]
         },
@@ -69,9 +74,14 @@
             "name": "Frameworks e Libs",
             "content": [
                 {
-                    "name": "React",
-                    "img": "",
-                    "a": ""
+                    "name": "ReactJS",
+                    "img": "/assets/img/pictures/knowledge/react.png",
+                    "a": "https://beta.reactjs.org/"
+                },
+                {
+                    "name": "Pandas",
+                    "img": "/assets/img/pictures/knowledge/pandas.png",
+                    "a": "https://pandas.pydata.org/docs/index.html"
                 }
             ]
         },
@@ -80,18 +90,18 @@
             "content": [
                 {
                     "name": "Manutenção e Suporte",
-                    "img": "",
-                    "a": ""
+                    "img": "/assets/img/pictures/knowledge/manutencao-e-suporte.png",
+                    "a": "https://docs.oracle.com/cd/E52435_01/docs.40/910-6046-001_rev_c.pdf"
                 },
                 {
                     "name": "Arduino",
-                    "img": "",
-                    "a": ""
+                    "img": "/assets/img/pictures/knowledge/arduino.png",
+                    "a": "https://docs.arduino.cc/"
                 },
                 {
                     "name": "Infraestrutura de Redes",
-                    "img": "",
-                    "a": ""
+                    "img": "/assets/img/pictures/knowledge/redes.png",
+                    "a": "https://docs.oracle.com/cd/E52435_01/docs.40/910-6046-001_rev_c.pdf"
                 }
             ]
         },
@@ -100,23 +110,23 @@
             "content": [
                 {
                     "name": "Amazon Web Services",
-                    "img": "",
-                    "a": ""
+                    "img": "/assets/img/pictures/knowledge/aws.jpg",
+                    "a": "https://docs.aws.amazon.com/"
                 },
                 {
                     "name": "Azure",
-                    "img": "",
-                    "a": ""
+                    "img": "/assets/img/pictures/knowledge/azure.png",
+                    "a": "https://learn.microsoft.com/en-us/azure/"
                 },
                 {
                     "name": "Google Cloud",
-                    "img": "",
-                    "a": ""
+                    "img": "/assets/img/pictures/knowledge/google-cloud.png",
+                    "a": "https://cloud.google.com/docs"
                 },
                 {
                     "name": "Oracle",
-                    "img": "",
-                    "a": ""
+                    "img": "/assets/img/pictures/knowledge/oracle.png",
+                    "a": "https://docs.oracle.com/en/cloud/get-started/index.html"
                 }
             ]
         },
@@ -125,98 +135,123 @@
             "content": [
                 {
                     "name": "Auto Rename Tag",
-                    "img": "",
-                    "a": ""
+                    "img": "/assets/img/pictures/knowledge/vscode.png",
+                    "a": "https://marketplace.visualstudio.com/vscode"
                 },
                 {
                     "name": "Code Runner",
-                    "img": "",
-                    "a": ""
-                },
-                {
-                    "name": "Database Client",
-                    "img": "",
-                    "a": ""
-                },
-                {
-                    "name": "Dev Containers",
-                    "img": "",
-                    "a": ""
-                },
-                {
-                    "name": "Docker",
-                    "img": "",
-                    "a": ""
-                },
-                {
-                    "name": "Live Share",
-                    "img": "",
-                    "a": ""
-                },
-                {
-                    "name": "Markdown All in One",
-                    "img": "",
-                    "a": ""
-                },
-                {
-                    "name": "Material Icon Theme",
-                    "img": "",
-                    "a": ""
-                },
-                {
-                    "name": "Python",
-                    "img": "",
-                    "a": ""
+                    "img": "/assets/img/pictures/knowledge/vscode.png",
+                    "a": "https://marketplace.visualstudio.com/vscode"
                 },
                 {
                     "name": "C++",
-                    "img": "",
-                    "a": ""
+                    "img": "/assets/img/pictures/knowledge/vscode.png",
+                    "a": "https://marketplace.visualstudio.com/vscode"
                 },
                 {
                     "name": "C#",
-                    "img": "",
-                    "a": ""
+                    "img": "/assets/img/pictures/knowledge/vscode.png",
+                    "a": "https://marketplace.visualstudio.com/vscode"
+                },
+                {
+                    "name": "Database Client",
+                    "img": "/assets/img/pictures/knowledge/vscode.png",
+                    "a": "https://marketplace.visualstudio.com/vscode"
+                },
+                {
+                    "name": "Dev Containers",
+                    "img": "/assets/img/pictures/knowledge/vscode.png",
+                    "a": "https://marketplace.visualstudio.com/vscode"
+                },
+                {
+                    "name": "Docker",
+                    "img": "/assets/img/pictures/knowledge/vscode.png",
+                    "a": "https://marketplace.visualstudio.com/vscode"
+                },
+                {
+                    "name": "Live Share",
+                    "img": "/assets/img/pictures/knowledge/vscode.png",
+                    "a": "https://marketplace.visualstudio.com/vscode"
+                },
+                {
+                    "name": "Markdown All in One",
+                    "img": "/assets/img/pictures/knowledge/vscode.png",
+                    "a": "https://marketplace.visualstudio.com/vscode"
+                },
+                {
+                    "name": "Material Icon Theme",
+                    "img": "/assets/img/pictures/knowledge/vscode.png",
+                    "a": "https://marketplace.visualstudio.com/vscode"
+                },
+                {
+                    "name": "Python",
+                    "img": "/assets/img/pictures/knowledge/vscode.png",
+                    "a": "https://marketplace.visualstudio.com/vscode"
                 },
                 {
                     "name": "Svg Preview",
-                    "img": "",
-                    "a": ""
+                    "img": "/assets/img/pictures/knowledge/vscode.png",
+                    "a": "https://marketplace.visualstudio.com/vscode"
                 },
                 {
                     "name": "Thunder Client",
-                    "img": "",
-                    "a": ""
+                    "img": "/assets/img/pictures/knowledge/vscode.png",
+                    "a": "https://marketplace.visualstudio.com/vscode"
                 },
                 {
                     "name": "Vscode Styled Components",
-                    "img": "",
-                    "a": ""
+                    "img": "/assets/img/pictures/knowledge/vscode.png",
+                    "a": "https://marketplace.visualstudio.com/vscode"
                 }
             ]
         },
         {
-            "name": "Ferramentas",
+            "name": "Ferramentals e Tals",
             "content": [
                 {
                     "name": "Docker",
-                    "img": "",
-                    "a": ""
+                    "img": "/assets/img/pictures/knowledge/docker.png",
+                    "a": "https://docs.docker.com/"
                 },
                 {
                     "name": "Yarn",
-                    "img": "",
-                    "a": ""
+                    "img": "/assets/img/pictures/knowledge/yarn.jpg",
+                    "a": "https://yarnpkg.com/package/documentation"
+                },
+                {
+                    "name": "Node",
+                    "img": "/assets/img/pictures/knowledge/node.webp",
+                    "a": "https://nodejs.org/en/docs/"
+                },
+                {
+                    "name": ".NET",
+                    "img": "/assets/img/pictures/knowledge/dotnet.png",
+                    "a": "https://nodejs.org/en/docs/"
                 },
                 {
                     "name": "Git",
-                    "img": "",
-                    "a": ""
+                    "img": "/assets/img/pictures/knowledge/git.png",
+                    "a": "https://git-scm.com/doc"
                 },
                 {
                     "name": "Figma",
-                    "img": "",
-                    "a": ""
+                    "img": "/assets/img/pictures/knowledge/figma.png",
+                    "a": "https://www.figma.com/best-practices/guide-to-developer-handoff/components-styles-and-documentation/"
+                },
+                {
+                    "name": "Trello",
+                    "img": "/assets/img/pictures/knowledge/trello.png",
+                    "a": "https://trello.com/"
+                },
+                {
+                    "name": "Office",
+                    "img": "/assets/img/pictures/knowledge/office.png",
+                    "a": "https://learn.microsoft.com/en-us/microsoft-365/"
+                },
+                {
+                    "name": "Meu próprio site ;p",
+                    "img": "/assets/img/pictures/logo-black.png",
+                    "a": "https://zedeogo.github.io/"
                 }
             ]
         }

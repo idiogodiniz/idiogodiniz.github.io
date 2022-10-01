@@ -300,23 +300,23 @@ const Tools = _ => {
                         <h3>Conversor de Moedas</h3>
                         <p>Faz a conversão de valores entre diversas moedas do mundo. Taxas atualizadas em tempo real.</p>
                     </Tool>
-                    <Tool>
+                    <Tool id='' onClick={click}>
                         <h3>Calcular Percentuais</h3>
                         <p>Calcular o percentual, aumento percentual, desconto percentual, margem de venda, variação percentual ou relação percentual.</p>
                     </Tool>
-                    <Tool>
+                    <Tool id='' onClick={click}>
                         <h3>Calcular Parcelas</h3>
                         <p>Calcular parcelas a partir de um valor e quantidade de parcelas.</p>
                     </Tool>
-                    <Tool>
+                    <Tool id='' onClick={click}>
                         <h3>Calcular Lucro</h3>
                         <p>Calcular lucro excluindo o valor inicial gasto.</p>
                     </Tool>
-                    <Tool>
+                    <Tool id='' onClick={click}>
                         <h3>Calcular Montante</h3>
                         <p>Calcular valor acumulado.</p>
                     </Tool>
-                    <Tool>
+                    <Tool id='' onClick={click}>
                         <h3>Prever Pagamentos de Mesmo Valor</h3>
                         <p>Prever pagamentos de mesmo valor rapidamente.</p>
                     </Tool>
@@ -336,31 +336,35 @@ const Tools = _ => {
                         <h3>Valor do Salário Mínimo</h3>
                         <p>Consulte o valor do salário mínimo atual e veja o histórico de reajustes</p>
                     </Tool>
-                    <Tool>
+                    <Tool id='' onClick={click}>
                         <h3>Calcular Juros Simples</h3>
                         <p>Calcular valor futuro, valor presentel (ou principal), taxa de juros ou número de períodos.</p>
                     </Tool>
-                    <Tool>
+                    <Tool id='' onClick={click}>
                         <h3>Calcular Juros Compostos</h3>
                         <p>Calcular valor futuro, valor presentel (ou principal), taxa de juros ou número de períodos.</p>
                     </Tool>
-                    <Tool>
+                    <Tool id='' onClick={click}>
                         <h3>Converter Taxa de Juros</h3>
                         <p>Converter taxa de juros de forma rápida.</p>
                     </Tool>
-                    <Tool>
+                    <Tool id='' onClick={click}>
+                        <h3>Dinheiro no Tempo</h3>
+                        <p>Prever dinheiro no tempo.</p>
+                    </Tool>
+                    <Tool id='' onClick={click}>
                         <h3>Calcular Financiamentos e Empréstimos (Tabela Price e SAC)</h3>
                         <p>Calcular valor períodico, períodos e taxa de juros.</p>
                     </Tool>
-                    <Tool>
+                    <Tool id='' onClick={click}>
                         <h3>Calcular Retorno Sobre Investimento e Viabilidade Financeira</h3>
                         <p>Calcular retorno sobre investimento e viabilidade financeira rapidamente.</p>
                     </Tool>
-                    <Tool>
+                    <Tool id='' onClick={click}>
                         <h3>Calcular Saldo Devedor</h3>
                         <p>Calcular saldo devedor rapidamente.</p>
                     </Tool>
-                    <Tool>
+                    <Tool id='' onClick={click}>
                         <h3>Calculadora HP-12C Online</h3>
                         <p>Use uma calculadora HP-12C online.</p>
                     </Tool>

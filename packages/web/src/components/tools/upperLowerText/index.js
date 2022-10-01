@@ -1,5 +1,5 @@
 import React, { useState, useLayoutEffect } from 'react';
-import { orietationText } from '../../../services';
+import { orietationText } from '../../../services/services';
 import styled from 'styled-components';
 
 const StyledUpperLowerText = styled.div`

@@ -13,9 +13,10 @@ export const Top = styled.div`
     .top__welcome-card {
         width: 60%;
         h1 {
-            margin-bottom: 1.4rem;
+            margin-bottom: 1rem;
         }
         p:nth-child(2) {
+            font-size: 1.2rem;
             margin-bottom: 1rem;
         }
         div > a > img {
@@ -42,6 +43,11 @@ export const Top = styled.div`
         .top__background {
             display: none;
         }
+        @media screen and (max-width: 400px) {
+        h1 {
+            font-size: 2.3rem;
+        }
+    }
     }
 `;
 
@@ -50,7 +56,7 @@ export const Main = styled.main`
         article {
             width: 60%;
             h2:nth-child(n+2) {
-                margin-top: 1.7rem;
+                margin-top: 1.3rem;
             }
             p {
                 margin-bottom: .8rem;
@@ -60,27 +66,27 @@ export const Main = styled.main`
             }
         }
         .section__about-img {
-            width: 15rem;
-            height: 15rem;
-            margin-right: 4rem;
+            width: 14rem;
+            height: 14rem;
+            margin-right: 21px;
+            img {
+                border: 6px solid #fff;
+                width: 100%;
+                height: 100%;
+            }
             @media screen and (max-width: 900px) {
                 margin-right: 0;
                 margin-bottom: 3rem;
             }
-        }
-        img {
-            border: 6px solid #fff;
-            width: 15rem;
-            height: auto;
         }
         @media screen and (max-width: 900px) {
             flex-direction: column-reverse;
             .section__about-img {
                 width: 12rem;
                 height: 12rem;
-            }
-            img {
-                width: 12rem;
+                img {
+                    width: 12rem;
+                }
             }
         }
     }
@@ -101,10 +107,8 @@ export const Main = styled.main`
         p, a {
             font-family: 'inter-medium';
             font-size: 1.5rem;
-            line-height: 2.1rem;
             @media screen and (max-width: 900px) {
                 font-size: .8rem;
-                line-height: 1.3rem;
             }
         }
         .section__contactme-box {
@@ -121,7 +125,7 @@ export const Main = styled.main`
     .section__knowledge {
         width: 100%;
         .section__knowledge-min {
-            min-height: 45vh;
+            min-height: 60vh;
         }
         .section__knowledge-carrousel {
             margin: .4rem 0 1.6rem;
@@ -130,7 +134,15 @@ export const Main = styled.main`
             h2 {
                 opacity: .4;
             }
+            h2:hover, h2:focus {
+                color: #ff9200;
+                opacity: inherit;
+            }
             h2:nth-child(3) {
+                :hover {
+                    color: #fff;
+                }
+                cursor: default;
                 opacity: inherit;
             }
         }
@@ -145,12 +157,38 @@ export const Main = styled.main`
         }
         .section__knowledge-card {
             background-color: #fff;
-            margin: 1.25%;
-            width: 17.5%;
+            margin: 1.19%;
+            width: 22.6%;
             height: 4.3rem;
-            padding: 1rem 1rem;
+            cursor: pointer;
+            :hover {
+                background-color: #ff9200;
+                h3 {
+                    color: #fff;
+                }
+                div:nth-child(1) > div {
+                    background-image: linear-gradient(to right, #ff920000, #ff920000, #ff9200aa, #ff9200);
+                }
+            }
             h3 {
+                padding: .4rem;
                 color: #000;
+            }
+            img {
+                width: 100%;
+                height: auto;
+            }
+            div {
+                width: 50%;
+            }
+            div:nth-child(1) {
+                background-size: 100% auto;   
+                background-position: 50% 50%;
+            }
+            div:nth-child(1) > div {
+                right: 0;
+                background-image: linear-gradient(to right, #ffffff00, #ffffff00, #ffffffaa, #ffffff);
+                width: 100%;
             }
         }
         .section__knowledge-view{
@@ -160,8 +198,8 @@ export const Main = styled.main`
         @media screen and (max-width: 900px) {
             justify-content: space-between;
             .section__knowledge-carrousel {
-                width: 200%;
-                left: -25.5%;
+                width: 250%;
+                left: -43%;
             }
             h2 {
                 width: 25%;
@@ -170,13 +208,16 @@ export const Main = styled.main`
                 display: none;
             }
             .section__knowledge-card {
-                margin: 1rem 1.6%;
-                width: 30%;
-                padding: .7rem .7rem;
+                margin: 1rem 2%;
+                width: 45.85%;
                 h3 {
                     font-family: 'inter-medium';
                     font-size: .8rem;
                     line-height: 1rem;
+                }
+                @media screen and (max-width: 400px) {
+                    margin: 1rem 0;
+                    width: 100%;
                 }
             }
         }

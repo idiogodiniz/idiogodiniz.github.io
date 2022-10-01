@@ -26,6 +26,7 @@ const Common = createGlobalStyle`
         src: url('/assets/fonts/Inter-Thin.ttf');
     }
     * {
+        background-repeat: no-repeat;
         color: #000;
         padding: 0;
         margin: 0;
@@ -40,29 +41,15 @@ const Common = createGlobalStyle`
     }
     h1, h2, h3, h4, h5, h6 {
         font-family: 'inter-bold';
-        letter-spacing: .0001rem;
     }
     h1, h1 > span {
         font-size: 2.7rem;
-        line-height: 3.2rem;
     }
     h2, h2 > span, h2 > a{
-        font-size: 1.2rem;
-        line-height: 1.5rem;
+        font-size: 1.1rem;
     }
-    h3, h3 > span, h3 > a, p, p > span, p > a, .link, .link > span{
-        font-size: 1.2rem;
-        line-height: 1.4rem;
-        letter-spacing: .04rem;
-    }
-    h4, h4 > span, h4 > a{
-        
-    }
-    h5, h5 > span, h5 > a{
-        
-    }
-    h6, h6 > span, h6 > a{
-        
+    h3, h3 > span, h3 > a{
+        font-size: 1rem;
     }
     p, p > span, p > a, .link, .link > span {
         font-family: 'inter-regular';

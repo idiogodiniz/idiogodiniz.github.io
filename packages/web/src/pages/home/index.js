@@ -6,6 +6,7 @@ import StyledHome, {
     Footer
 } from './styles';
 import { getKnowledge } from '../../api/public/get';
+import { redirect } from '../../services/services';
 
 const Home = _ => {
     const [knowledge, setKnowledge] = useState([{ name: '', content: [{name: '', img: '', desc: ''}] }]);
@@ -152,12 +153,11 @@ const Home = _ => {
                         </div>
                         <div className='container w100 wrap'>
                             {knowledge[positions[2]].content.map(item => 
-                                <div className='section__knowledge-card' key={item.name}>
-                                    <div className='container'>
-                                        <img src={item.img} alt='' />
-                                        <h3>{item.name}</h3>
+                                <div onClick={_ => redirect(item.a)} className='section__knowledge-card container' key={item.name}>
+                                    <div className="h100 relative" style={{ backgroundImage: `url(${item.img})` }}>
+                                        <div className='absolute h100' />
                                     </div>
-                                    <p>{item.desc}</p>
+                                    <div className="h100 container-column"><h3>{item.name}</h3></div>
                                 </div>
                             )}
                         </div>

@@ -3,7 +3,9 @@ import StyledNotebook from './styles';
 
 const Notebook = _ => {
     return (
-        <StyledNotebook></StyledNotebook>
+        <StyledNotebook>
+            
+        </StyledNotebook>
     )
 }
 

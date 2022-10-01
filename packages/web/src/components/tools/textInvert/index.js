@@ -1,6 +1,6 @@
 import React, { useState, useLayoutEffect } from 'react';
 import styled from 'styled-components';
-import { invertTextFunction } from '../../../services';
+import { invertTextFunction } from '../../../services/services';
 
 const StyledTextInvert = styled.div`
     .text__content {
