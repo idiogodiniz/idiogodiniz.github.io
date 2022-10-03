@@ -134,14 +134,7 @@ export const Main = styled.main`
             h2 {
                 opacity: .4;
             }
-            h2:hover, h2:focus {
-                color: #ff9200;
-                opacity: inherit;
-            }
             h2:nth-child(3) {
-                :hover {
-                    color: #fff;
-                }
                 cursor: default;
                 opacity: inherit;
             }
@@ -152,9 +145,11 @@ export const Main = styled.main`
             cursor: pointer;
             width: 17.5%;
         }
+        
         h2:nth-child(3) {
             font-family: 'inter-semibold';
         }
+
         .section__knowledge-card {
             background-color: #fff;
             margin: 1.19%;
@@ -162,12 +157,14 @@ export const Main = styled.main`
             height: 4.3rem;
             cursor: pointer;
             :hover {
-                background-color: #ff9200;
+                div:nth-child(2) {
+                    background-color: #000000;
+                }
                 h3 {
                     color: #fff;
                 }
                 div:nth-child(1) > div {
-                    background-image: linear-gradient(to right, #ff920000, #ff920000, #ff9200aa, #ff9200);
+                    background-image: linear-gradient(to right, #00000000, #00000000, #000000aa, #000000dd, #000, #000);
                 }
             }
             h3 {

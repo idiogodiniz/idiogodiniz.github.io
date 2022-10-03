@@ -39,8 +39,11 @@ const Common = createGlobalStyle`
     .limit-view {
         max-width: 1920px !important;
     }
-    h1, h2, h3, h4, h5, h6 {
+    h1 {
         font-family: 'inter-bold';
+    }
+    h2, h3, h4, h5, h6 {
+        font-family: 'inter-semibold';
     }
     h1, h1 > span {
         font-size: 2.7rem;

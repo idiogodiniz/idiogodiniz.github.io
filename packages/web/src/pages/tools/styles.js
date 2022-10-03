@@ -2,9 +2,11 @@ import styled from 'styled-components';
 
 const StyledTools = styled.div`
     padding: 8rem 4rem;
-    h2 {
+    section div h2 {
         position: absolute;
         bottom: -4px;
+    }
+    h2 {
         font-family: 'inter-medium';
         font-size: 1.7rem;
         line-height: 1.7rem;
