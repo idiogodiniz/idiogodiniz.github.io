@@ -1,6 +1,9 @@
 import { createGlobalStyle } from 'styled-components';
 
 const Common = createGlobalStyle`
+    :root {
+        background-color: #000;
+    }
     @font-face {
         font-family: 'inter-bold';
         src: url('/assets/fonts/Inter-Bold.ttf');
@@ -27,7 +30,7 @@ const Common = createGlobalStyle`
     }
     * {
         background-repeat: no-repeat;
-        color: #000;
+        color: #fff;
         padding: 0;
         margin: 0;
         box-sizing: border-box;
@@ -176,53 +179,98 @@ const Common = createGlobalStyle`
     .z5 {
         z-index: 5;
     }
-    .cFFFFFF {
-        color: #FFF;
+    .radius {
+        border-radius: .5rem;
     }
-    .bFFFFFF {
-        background-color: #FFF;
+    .border-white {
+        border: #fff solid 6px;
     }
-    .c000000 {
+    .border-black {
+        border: #000 solid 6px;
+    }
+    .border-orange {
+        border: solid 6px;
+        border-image: linear-gradient( #ff9900, #ff0000 91%) 30;
+    }
+    .c-white {
+        color: #fff;
+    }
+    .b-white {
+        background-color: #fff;
+    }
+    .c-black {
         color: #000;
     }
-    .b000000 {
+    .b-black {
         background-color: #000;
     }
-    .box-shadow-white-right {
-        border: #fff solid 6px;
-        position: absolute;
-        top: 15px;
-        left: 15px;
-        z-index: 1;
-        width: 100%;
-        height: 100%;
+    .c-orange {
+        background: linear-gradient(-95.27deg, #ff9900, #ff0000 91%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
     }
-    .box-shadow-white-left {
-        border: #fff solid 6px;
-        position: absolute;
-        top: 15px;
-        right: 15px;
-        z-index: 1;
-        width: 100%;
-        height: 100%;
+    .c-orange-o {
+        background: linear-gradient(95.27deg, #ff9900, #ff0000 91%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
     }
-    .box-shadow-black-right {
-        border: #000 solid 6px;
-        position: absolute;
-        top: 15px;
-        left: 15px;
-        z-index: 1;
-        width: 100%;
-        height: 100%;
+    .b-orange {
+        background-image: linear-gradient(-95.27deg, #ff9900, #ff0000 91%);
     }
-    .box-shadow-black-left {
-        border: #000 solid 6px;
+    .b-orange-o {
+        background-image: linear-gradient(95.27deg, #ff9900, #ff0000 91%);
+    }
+    .box-shadow, .box-shadow-r {
         position: absolute;
-        top: 15px;
-        right: 15px;
+        border-radius: .5rem;
         z-index: 1;
         width: 100%;
         height: 100%;
+        ::before {
+            content: "";
+            position: absolute;
+            left: 2px;
+            top: 2px;
+            width: calc(100% - 4px);
+            height: calc(100% - 4px);
+            background-color: #000;
+            border-radius: .5rem;
+        }
+    }
+    .box-shadow {
+        top: 10px;
+        left: 10px;
+    }
+    .box-shadow-r {
+        top: 10px;
+        right: 10px;
+    }
+    .box-shadow-hover {
+        :hover {
+            ::before {
+                content: "";
+                background-image: linear-gradient(-95.27deg, #ff9900, #ff0000 91%);
+                z-index: 1;
+                position: absolute;
+                top: 10px;
+                left: 10px;
+                border-radius: .5rem;
+                z-index: 1;
+                width: 100%;
+                height: 100%;
+            }
+            ::after {
+                content: "";
+                z-index: 1;
+                position: absolute;
+                left: 12px;
+                top: 12px;
+                width: calc(100% - 4px);
+                height: calc(100% - 4px);
+                background-color: #000;
+                border-radius: .5rem;
+            }
+        }
     }
 `;
 

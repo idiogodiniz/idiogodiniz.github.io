@@ -9,10 +9,11 @@ const StyledHome = styled.div`
 `;
 
 export const Top = styled.div`
-    padding: 15vh 5vw;
     .top__welcome-card {
-        width: 60%;
+        padding-top: 8rem;
+        padding-bottom: 8rem;
         h1 {
+            width: 65%;
             margin-bottom: 1rem;
         }
         p:nth-child(2) {
@@ -25,19 +26,9 @@ export const Top = styled.div`
             margin-right: 1.2rem;
         }
     }
-    .top__background {
-        margin-top: 2rem;
-        width: 60%;
-        img {
-            width: 30vw;
-            height: auto;
-        }
-    }
     @media screen and (max-width: 1100px) {
-        min-height: 35.7rem;
-        height: 75vh;
         align-items: center;
-        .top__welcome-card {
+        .top__welcome-card h1 {
             width: 85%;
         }
         .top__background {
@@ -66,13 +57,17 @@ export const Main = styled.main`
             }
         }
         .section__about-img {
-            width: 14rem;
-            height: 14rem;
             margin-right: 21px;
+            div:nth-child(1) {
+                background-image: linear-gradient(-95.27deg, #ff9900, #ff0000 91%);
+                width: 14rem;
+                height: 14rem;
+            }
             img {
-                border: 6px solid #fff;
-                width: 100%;
-                height: 100%;
+                width: calc(100% - 4px);
+                height: calc(100% - 4px);
+                top: 2px;
+                left: 2px;
             }
             @media screen and (max-width: 900px) {
                 margin-right: 0;
@@ -82,10 +77,9 @@ export const Main = styled.main`
         @media screen and (max-width: 900px) {
             flex-direction: column-reverse;
             .section__about-img {
-                width: 12rem;
-                height: 12rem;
-                img {
+                div:nth-child(1) {
                     width: 12rem;
+                    height: 12rem;
                 }
             }
         }
@@ -112,13 +106,19 @@ export const Main = styled.main`
             }
         }
         .section__contactme-box {
-            background-color: #000;
-            width: 65%;
-            padding: .8rem 1rem;
             margin-bottom: 3rem;
-            @media screen and (max-width: 900px) {
-                width: 85%;
-                padding: .5rem .8rem;
+            div {
+                width: 65%;
+                @media screen and (max-width: 900px) {
+                    width: 85%;
+                }
+            }
+            div:nth-child(1) {
+                padding: .8rem 1rem;
+                @media screen and (max-width: 900px) {
+                    width: 85%;
+                    padding: .5rem .8rem;
+                }
             }
         }
     }
@@ -129,8 +129,8 @@ export const Main = styled.main`
         }
         .section__knowledge-carrousel {
             margin: .4rem 0 1.6rem;
-            width: 150%;
-            left: -16%;
+            width: 120%;
+            left: -10.2%;
             h2 {
                 opacity: .4;
             }
@@ -149,43 +149,33 @@ export const Main = styled.main`
         h2:nth-child(3) {
             font-family: 'inter-semibold';
         }
-
         .section__knowledge-card {
-            background-color: #fff;
             margin: 1.19%;
             width: 22.6%;
             height: 4.3rem;
             cursor: pointer;
-            :hover {
-                div:nth-child(2) {
-                    background-color: #000000;
-                }
-                h3 {
-                    color: #fff;
-                }
-                div:nth-child(1) > div {
-                    background-image: linear-gradient(to right, #00000000, #00000000, #000000aa, #000000dd, #000, #000);
-                }
-            }
             h3 {
                 padding: .4rem;
-                color: #000;
             }
             img {
                 width: 100%;
                 height: auto;
             }
-            div {
+            div:nth-child(1), div:nth-child(2) {
                 width: 50%;
             }
             div:nth-child(1) {
+                border-radius: .5rem 0 0 .5rem;
                 background-size: 100% auto;   
                 background-position: 50% 50%;
             }
             div:nth-child(1) > div {
                 right: 0;
-                background-image: linear-gradient(to right, #ffffff00, #ffffff00, #ffffffaa, #ffffff);
+                background-image: linear-gradient(95.27deg, #ff000000, #ff000000, #ff0000ca, #ff0000);
                 width: 100%;
+            }
+            div:nth-child(2) {
+                border-radius: 0 .5rem .5rem 0;
             }
         }
         .section__knowledge-view{
@@ -195,12 +185,12 @@ export const Main = styled.main`
         @media screen and (max-width: 900px) {
             justify-content: space-between;
             .section__knowledge-carrousel {
-                width: 250%;
-                left: -43%;
+                width: 160%;
+                left: -30%;
                 h2 {
-                width: 25%;
-                :hover {
-                    color: #fff
+                width: 28%;
+                    :hover {
+                        color: #fff
                 }
             }
             }

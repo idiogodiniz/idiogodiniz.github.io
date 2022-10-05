@@ -1,11 +1,6 @@
 import styled from 'styled-components';
 
 const StyledTools = styled.div`
-    padding: 8rem 4rem;
-    section div h2 {
-        position: absolute;
-        bottom: -4px;
-    }
     h2 {
         font-family: 'inter-medium';
         font-size: 1.7rem;
@@ -15,15 +10,7 @@ const StyledTools = styled.div`
     h3 {
         font-family: 'inter-medium';
     }
-    section:nth-child(n + 2) {
-        margin-top: 2.7rem;
-    }
-    .tools__h2-line {
-        border-bottom: .7rem solid #000;
-        margin-bottom: 1.7rem;
-    }
     @media screen and (max-width: 1000px) {
-        padding: 5rem 1rem;
         h2 {
             font-size: 1.2rem;
             line-height: 1.2rem;
@@ -33,12 +20,50 @@ const StyledTools = styled.div`
 `;
 
 export const Tool = styled.div`
+    border-radius: .5rem;
+    h3, p {
+        background-image: linear-gradient(95.27deg, #ff9900, #ff0000 91%);
+        position: relative;
+        z-index: 2;
+    }
+    h3 {
+        border-radius: .5rem .5rem 0 0;
+        padding: .7rem .7rem .2rem .7rem;
+    }
+    p {
+        border-radius: 0 0 .5rem .5rem;
+        padding: 0 .7rem .7rem .7rem;
+    }
     display: block;
     width: 100%;
-    border-left: .7rem solid #000;
-    padding: 0 1.4rem;
     margin-bottom: 1.7rem;
+    position: relative;
     cursor: pointer;
+    :hover {
+        ::before {
+            content: "";
+            background-image: linear-gradient(-95.27deg, #ff9900, #ff0000 91%);
+            z-index: 1;
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            border-radius: .5rem;
+            z-index: 1;
+            width: 100%;
+            height: 100%;
+        }
+        ::after {
+            content: "";
+            z-index: 1;
+            position: absolute;
+            left: 12px;
+            top: 12px;
+            width: calc(100% - 4px);
+            height: calc(100% - 4px);
+            background-color: #000;
+            border-radius: .5rem;
+        }
+    }
 `;
 
 export const ModalTool = styled.div`

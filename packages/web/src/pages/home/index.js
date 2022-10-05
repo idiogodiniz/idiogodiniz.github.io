@@ -70,19 +70,19 @@ const Home = _ => {
 
     return (
         <StyledHome className='container-column wh100 al-center'>
-            <Top className='container jc-between w100 limit-view'>
-                <Section className='top__welcome-card' bg='FFF' tag='welcome'>
+            <Top className='container-column jc-center w100 limit-view'>
+                <Section className='top__welcome-card' tag='Boas Vindas'>
                     <h1>Seja bem vindo(a) ao portfólio de José Diniz</h1>
                     <p>Espero que encontre o que precisa</p>
                     <div className='container fit'>
-                        <a className='fit' href='https://github.com/zedeogo'><img src='/assets/img/pictures/github-black.png' alt='' /></a>
-                        <a className='fit' href='https://www.linkedin.com/in/zedeogo/'><img src='/assets/img/pictures/linkedin-black.png' alt='' /></a>
-                        <a className='fit' href='https://www.instagram.com/zedeogo'><img src='/assets/img/pictures/instagram-black.png' alt='' /></a>
+                        <a className='fit' href='https://github.com/zedeogo'><img src='/assets/img/pictures/github-white.png' alt='' /></a>
+                        <a className='fit' href='https://www.linkedin.com/in/zedeogo/'><img src='/assets/img/pictures/linkedin-white.png' alt='' /></a>
+                        <a className='fit' href='https://www.instagram.com/zedeogo'><img src='/assets/img/pictures/instagram-white.png' alt='' /></a>
                     </div>
                 </Section>
             </Top>
             <Main className='container-column w100 limit-view'>
-                <Section bg='000' tag='about'>
+                <Section tag='Sobre Mim'>
                     <div className='container section__about w100 jc-between'>
                         <article>
                             <h2 className='uppercase'>nome</h2>
@@ -113,59 +113,60 @@ const Home = _ => {
                                 aquilo que almejo.
                             </p>
                         </article>
-                        <div className='section__about-img relative'>
-                            <img className='relative z2' src='/assets/img/pictures/jose.jpg' alt='' />
-                            <div className='box-shadow-white-right' />
+                        <div className='section__about-img relative fit'>
+                            <div className='relative z2 radius'><img className='absolute radius' src='/assets/img/pictures/jose.jpg' alt='' /></div>
+                            <div className='box-shadow b-orange' />
                         </div>
                     </div>
                 </Section>
-                <Section className='section__contactme' bg='FFF' tag='contactme:'>
-                    <div className='container w100'>
-                        <div className='section__contactme-box relative'>
+                <Section className='section__contactme' tag='Entre em Contato'>
+                    <div className='section__contactme-box container fit relative w100'>
+                        <div className='b-orange relative radius z2'>
                             <h2 className='uppercase'>e-mail</h2>
                             <a href='mailto:contato.zedeogo@gmail.com'>contato.zedeogo@gmail.com</a>
-                            <div className='box-shadow-black-right'></div>
                         </div>
+                        <div className='box-shadow b-orange'></div>
                     </div>
-                    <div className='container w100 jc-end'>
-                        <div className='section__contactme-box container-column al-end relative'>
+                    <div className='section__contactme-box container fit relative w100 jc-end'>
+                        <div className='container-column b-orange-o relative radius z2 al-end w100'>
                             <h2 className='uppercase'>telefone celular</h2>
                             <a href='tel:11988067221'>11 988067221</a>
-                            <div className='box-shadow-black-left'></div>
                         </div>
+                        <div className='box-shadow-r b-orange-o'></div>
                     </div>
-                    <div className='container w100'>
-                        <div className='section__contactme-box relative'>
+                    <div className='section__contactme-box container fit relative w100'>
+                        <div className='b-orange relative radius z2'>
                             <h2 className='uppercase'>redes sociais</h2>
                             <p>@zedeogo</p>
-                            <div className='box-shadow-black-right'></div>
                         </div>
+                        <div className='box-shadow b-orange'></div>
                     </div>
                 </Section>
-                <Section className='section__knowledge o-hidden' bg='000' tag='knowledge'>
+                <Section className='section__knowledge container-column' tag='Conhecimento'>
                     <div className='fit w100 section__knowledge-min'>
-                        <div className='section__knowledge-carrousel container relative'>
-                            <h2 id='kp1' className='first' onClick={click}>{knowledge[positions[0]].name}</h2>
-                            <h2 id='kp2' className='norm' onClick={click}>{knowledge[positions[1]].name}</h2>
-                            <h2 className='norm'>{knowledge[positions[2]].name}</h2>
-                            <h2 id='kp4' className='norm' onClick={click}>{knowledge[positions[3]].name}</h2>
-                            <h2 id='kp5' className='last' onClick={click}>{knowledge[positions[4]].name}</h2>
+                        <div className="w100 o-hidden relative">
+                            <div className='section__knowledge-carrousel w100 container jc-between relative'>
+                                <h2 id='kp1' className='first' onClick={click}>{knowledge[positions[0]].name}</h2>
+                                <h2 id='kp2' className='norm' onClick={click}>{knowledge[positions[1]].name}</h2>
+                                <h2 className='norm'>{knowledge[positions[2]].name}</h2>
+                                <h2 id='kp4' className='norm' onClick={click}>{knowledge[positions[3]].name}</h2>
+                                <h2 id='kp5' className='last' onClick={click}>{knowledge[positions[4]].name}</h2>
+                            </div>
                         </div>
                         <div className='container w100 wrap'>
                             {knowledge[positions[2]].content.map(item => 
-                                <div onClick={_ => redirect(item.a)} className='section__knowledge-card container' key={item.name}>
-                                    <div className="h100 relative" style={{ backgroundImage: `url(${item.img})` }}>
+                                <div onClick={_ => redirect(item.a)} className='section__knowledge-card radius container wh100 relative z2 box-shadow-hover' key={item.name}>
+                                    <div className="h100 relative z2 b-white" style={{ backgroundImage: `url(${item.img})` }}>
                                         <div className='absolute h100' />
                                     </div>
-                                    <div className="h100 container-column"><h3>{item.name}</h3></div>
+                                    <div className="h100 container-column relative z2 b-orange"><h3>{item.name}</h3></div>
                                 </div>
                             )}
                         </div>
                     </div>
                 </Section>
-                <Section bg='fff' tag='portfolio'></Section>
-                <section className='b000000'></section>
-                <Section bg='fff' tag='social'></Section>
+                <Section tag='portfolio'></Section>
+                <Section tag='social'></Section>
             </Main>
             <Footer></Footer>
             <div className='onscreen w100' />

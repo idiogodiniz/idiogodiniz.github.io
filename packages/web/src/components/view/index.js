@@ -28,8 +28,8 @@ const View = props => {
         <div className='container-column relative wh100'>
             <StyledView view={show} className='w100 jc-between fixed top z3'>
                 <div className='container h100 al-center'>
-                    <img className='view__logo-image' src='/assets/img/pictures/logo-black.png' alt='' />
-                    <div className='fit'>zedeogo</div>
+                    <img className='view__logo-image' src='/assets/img/pictures/logo-white.png' alt='' />
+                    <div className='fit'>José Diniz</div>
                 </div>
                 <div className='container h100 al-center'>
                     <nav className='fit'>
@@ -52,7 +52,7 @@ const View = props => {
                         </ul>
                     </nav>
                     <div className='fit'>
-                        <img className='view__settings-image' src='/assets/img/pictures/settings-black.png' alt='' />
+                        <img className='view__settings-image' src='/assets/img/pictures/settings-white.png' alt='' />
                     </div>
                 </div>
             </StyledView>

@@ -3,6 +3,7 @@ import StyledTools, {
     Tool,
     ModalTool
 } from './styles';
+import Section from '../../components/section';
 
 import TextInvert from '../../components/tools/textInvert/index';
 import UpperLowerText from '../../components/tools/upperLowerText';
@@ -33,7 +34,7 @@ const Tools = _ => {
 
     useLayoutEffect(_ => {
         const identifyKey = e => {
-            switch (e) {
+            switch (e.key) {
                 case 'Escape':
                     if (modal)
                         setModal(false);
@@ -58,18 +59,13 @@ const Tools = _ => {
                         <div className='wh100 relative'>
                             {modalContent}
                             <div className='container jc-center absolute w100 modaltool__close-window'>
-                                <button id='close' className='capitalize fit cFFFFFF b000000' onClick={click}>fechar</button>
+                                <button id='close' className='capitalize fit c-white b-black' onClick={click}>fechar</button>
                             </div>
                         </div>
                     </div>
                 </ModalTool>
             )}
-            <section>
-                <div className="w100 tools__h2-line relative fit">
-                    <h2 className='capitalize cFFFFFF b000000 fit'>
-                        texto
-                    </h2>
-                </div>
+            <Section tag='Funções de Texto'>
                 <div className="container-column w100">
                     <Tool id='textInvert' onClick={click}>
                         <h3>Inverter Texto</h3>
@@ -124,13 +120,8 @@ const Tools = _ => {
                         <p>Detecta erros ortográficos e sugere correções em um texto.</p>
                     </Tool>
                 </div>
-            </section>
-            <section>
-                <div className="w100 tools__h2-line relative fit">
-                    <h2 className='capitalize cFFFFFF b000000 fit'>
-                        aleatório
-                    </h2>
-                </div>
+            </Section>
+            <Section tag='Funções de Valores Aleatórios'>
                 <div className="container-column w100">
                     <Tool id='' onClick={click}>
                         <h3>Sorteio</h3>
@@ -157,13 +148,8 @@ const Tools = _ => {
                         <p>Gera senhas aleatórias de diversos tamanhos e opções.</p>
                     </Tool>
                 </div>
-            </section>
-            <section>
-                <div className="w100 tools__h2-line relative fit">
-                    <h2 className='cFFFFFF b000000 fit'>
-                        Criptografia e Codificação
-                    </h2>
-                </div>
+            </Section>
+            <Section tag='Funções de Criptografia e Codificação'>
                 <div className="container-column w100">
                     <Tool id='' onClick={click}>
                         <h3>Código Binário</h3>
@@ -190,13 +176,8 @@ const Tools = _ => {
                         <p>Gera vários códigos de barras ao mesmo tempo.</p>
                     </Tool>
                 </div>
-            </section>
-            <section>
-                <div className="w100 tools__h2-line relative fit">
-                    <h2 className='cFFFFFF b000000 fit'>
-                        Data e Hora
-                    </h2>
-                </div>
+            </Section>
+            <Section tag='Funções de Data e Hora'>
                 <div className="container-column w100">
                     <Tool id='' onClick={click}>
                         <h3>Calendário</h3>
@@ -251,13 +232,8 @@ const Tools = _ => {
                         <p>Saiba em qual semana do ano estamos e visualize o progresso.</p>
                     </Tool>
                 </div>
-            </section>
-            <section>
-                <div className="w100 tools__h2-line relative fit">
-                    <h2 className='capitalize cFFFFFF b000000 fit'>
-                        números
-                    </h2>
-                </div>
+            </Section>
+            <Section tag='Funções para Trabalhar com Números'>
                 <div className="container-column w100">
                     <Tool id='' onClick={click}>
                         <h3>Conversão de Base Numérica</h3>
@@ -288,13 +264,8 @@ const Tools = _ => {
                         <p>Faz o cálculo da regra de 3 rapidamente.</p>
                     </Tool>
                 </div>
-            </section>
-            <section>
-                <div className="w100 tools__h2-line relative fit">
-                    <h2 className='capitalize cFFFFFF b000000 fit'>
-                        finanças
-                    </h2>
-                </div>
+            </Section>
+            <Section tag='Funções para Finanças'>
                 <div className="container-column w100">
                     <Tool id='' onClick={click}>
                         <h3>Conversor de Moedas</h3>
@@ -369,13 +340,8 @@ const Tools = _ => {
                         <p>Use uma calculadora HP-12C online.</p>
                     </Tool>
                 </div>
-            </section>
-            <section>
-                <div className="w100 tools__h2-line relative fit">
-                    <h2 className='capitalize cFFFFFF b000000 fit'>
-                        desenvolvedor
-                    </h2>
-                </div>
+            </Section>
+            <Section tag='Funções para Desenvolvimento'>
                 <div className="container-column w100">
                     <Tool id='' onClick={click}>
                         <h3>Gerador de CEP</h3>
@@ -406,13 +372,8 @@ const Tools = _ => {
                         <p>Gera textos Lorem Ipsum para preencher espaços vazios antes de utilizar o conteúdo real.</p>
                     </Tool>
                 </div>
-            </section>
-            <section>
-                <div className="w100 tools__h2-line relative fit">
-                    <h2 className='capitalize cFFFFFF b000000 fit'>
-                        internet
-                    </h2>
-                </div>
+            </Section>
+            <Section tag='Funções de uso de Internet'>
                 <div className="container-column w100">
                     <Tool id='' onClick={click}>
                         <h3>Meu IP</h3>
@@ -435,13 +396,8 @@ const Tools = _ => {
                         <p>Informa a localização geográfica de um endereço IP.</p>
                     </Tool>
                 </div>
-            </section>
-            <section>
-                <div className="w100 tools__h2-line relative fit">
-                    <h2 className='capitalize cFFFFFF b000000 fit'>
-                        redes sociais
-                    </h2>
-                </div>
+            </Section>
+            <Section tag='Funções para Redes Sociais'>
                 <div className="container-column w100">
                     <Tool id='' onClick={click}>
                         <h3>Não Seguidores no Instagram</h3>
@@ -464,13 +420,8 @@ const Tools = _ => {
                         <p>Cria um link direto para uma conversa no Whatsapp.</p>
                     </Tool>
                 </div>
-            </section>
-            <section>
-                <div className="w100 tools__h2-line relative fit">
-                    <h2 className='capitalize cFFFFFF b000000 fit'>
-                        multimídia
-                    </h2>
-                </div>
+            </Section>
+            <Section tag='Funções de Multimídia'>
                 <div className="container-column w100">
                     <Tool id='' onClick={click}>
                         <h3>Converter Imagem em Texto</h3>
@@ -553,13 +504,8 @@ const Tools = _ => {
                         <p>Converta um video em outro tipo. Formatos suportados: .3g2 .3gp .3gpp .avi .cavs .dv .dvr .flv .m2ts .m4v .mkv .mod .mov .mp4 .mpeg .mpg .mts .mxf .ogg .rm .rmvb .swf .ts .vob .webm .wmv .wtv</p>
                     </Tool>
                 </div>
-            </section>
-            <section>
-                <div className="w100 tools__h2-line relative fit">
-                    <h2 className='capitalize cFFFFFF b000000 fit'>
-                        medicina
-                    </h2>
-                </div>
+            </Section>
+            <Section tag='Funções para Medicina'>
                 <div className="container-column w100">
                     <Tool id='' onClick={click}>
                         <h3>Calcular IMC</h3>
@@ -594,13 +540,8 @@ const Tools = _ => {
                         <p>Calcular gotejamento de medicamento de forma rápida.</p>
                     </Tool>
                 </div>
-            </section>
-            <section>
-                <div className="w100 tools__h2-line relative fit">
-                    <h2 className='capitalize cFFFFFF b000000 fit'>
-                        documentos
-                    </h2>
-                </div>
+            </Section>
+            <Section tag='Funções para Documentos'>
                 <div className="container-column w100">
                     <Tool id='' onClick={click}>
                         <h3>Recibo Online</h3>
@@ -611,13 +552,8 @@ const Tools = _ => {
                         <p>Gera nota promissória online para imprimir.</p>
                     </Tool>
                 </div>
-            </section>
-            <section>
-                <div className="w100 tools__h2-line relative fit">
-                    <h2 className='capitalize cFFFFFF b000000 fit'>
-                        diversos
-                    </h2>
-                </div>
+            </Section>
+            <Section tag='Funções Aleatórias'>
                 <div className="container-column w100">
                     <Tool id='' onClick={click}>
                         <h3>Signos e Datas</h3>
@@ -636,7 +572,7 @@ const Tools = _ => {
                         <p>Mostra suas coordenadas geográficas e a localização no mapa.</p>
                     </Tool>
                 </div>
-            </section>
+            </Section>
         </StyledTools>
     )
 }
